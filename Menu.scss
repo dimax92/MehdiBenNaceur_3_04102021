@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+header{
+    display:flex;
+    justify-content: center;
+    .fleche{
+        font-size:20px;
+        margin-right: 50px;
+    }
+    img{
+        height: 25px;
+    }
+}
+main{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 20px 0px 20px;
+    img{
+        height: 200px;
+        object-fit: cover;
+    }
+    .presentation{
+        background: #e3e3e3;
+        border-radius: 40px 40px 0px 0px;
+        margin-top: -40px;
+        padding: 20px;
+        .titre{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            .francaise{
+                font-size: 20px;
+                font-family: 'Shrikhand', cursive;
+            }
+            .coeur{
+                font-size: 20px;
+                height: 20px;
+            }
+        }
+        .type{
+            font-size: 15px;
+            margin: 2px 0px;
+        }
+        hr{
+            width: 30px;
+            border: solid #99E2D0 2px;
+            margin: 0px;
+        }
+        .choix{
+            display:flex;
+            flex-direction: column;
+            margin: 30px 0px;
+            @mixin jojo {
+                opacity: 1;
+                transform: translate(0px, 0px);
+                animation-name: toto;
+                animation-duration:1000ms;
+                @keyframes toto{
+                   0%{
+                       opacity:0;
+                       transform: translate(0px, 30px);
+                    }
+                   100%{
+                       opacity:1;
+                       transform: translate(0px, 0px);
+                    }
+                }
+            }
+            .n1{
+                animation-delay:100ms;
+                @include jojo;
+            }
+            .n2{
+                animation-delay:200ms;
+                @include jojo;
+            }
+            .n3{
+                animation-delay:300ms;
+                @include jojo;
+            }
+            .choix1{
+                max-height:55px;
+                display:flex;
+                background: white;
+                margin: 10px 0px;
+                border-radius: 15px;
+                box-shadow: 0px 0px 10px #00000033;
+                justify-content: space-between;
+                align-items: flex-end;
+                overflow:hidden;
+                max-width:244px;
+                .contenu{
+                    display:flex;
+                    flex-direction: column;
+                    margin:10px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    width:189px;
+                    .nom{
+                        font-size:13px;
+                        margin:2px;
+                        font-weight:bold;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    .ingredients{
+                        font-size:11px;
+                        margin:2px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+                .prixanimation{
+                    display: flex;
+                    align-items: flex-end;
+                    flex-direction: row;
+                    overflow:hidden;
+                    width:35px;
+                    z-index:1;
+                    .prix{
+                        font-size:10px;
+                        margin: 10px;
+                        font-weight:bold;
+                    }
+                    .animation{
+                        height: 55px;
+                        width: 70px;
+                        display:flex;
+                        overflow:hidden;
+                        align-items:center;
+                        background: #99E2D0;
+                        .yes{
+                            display:none;
+                            font-size:20px;
+                            color:white;
+                            overflow:hidden;
+                            margin-left:25px;
+                        }
+                    }
+                }
+            }
+            .choix1:hover{
+                .prixanimation{
+                    width:150px;
+                    animation-name:titi;
+                    animation-duration:1000ms;
+                    transform-origin:100% 50%;
+                    @keyframes titi {
+                        from{
+                            width:35px;
+                        }
+                        to{
+                            width:150px;
+                        }
+                    }
+                    .yes{
+                        display:initial;
+                        animation-name:coco;
+                        animation-duration:1000ms;
+                        @keyframes coco {
+                            from{
+                                transform:rotate(-360deg);
+                            }
+                            to{
+                                transform:rotate(360deg);
+                            }
+                        }
+                    }
+                }
+            }
+            .choix1:not(:hover){
+                .prixanimation{
+                    animation-name:tito;
+                    width:35px;
+                    animation-duration:1000ms;
+                    transform-origin:0% 50%;
+                    @keyframes tito {
+                        from{
+                            width:150px;
+                        }
+                        to{
+                            width:35px;
+                        }
+                    }
+                    .yes{
+                        display:initial;
+                    }
+                }
+            }
+        }
+        .divcommander{
+            display:flex;
+            justify-content: center;
+            margin: 50px 0px 90px 0px;
+            .commander{
+                height: 50px;
+                font-size: 17px;
+                width: 220px;
+                border-radius: 30px;
+                border: none;
+                background: linear-gradient(173deg, #FF79DA, #FF79DA 10%, #9356DC 100%);
+                color: white;
+                box-shadow: 0px 0px 9px #00000069;
+            }
+            .commander:hover{
+                opacity:0.9;
+                box-shadow: 0px 0px 9px black;
+            }
+        }
+    }
+}
+footer{
+    display:flex;
+    background: #2d2d2d;
+    flex-direction:column;
+    padding: 30px 0px 30px 0px;
+    margin:0px 20px 0px 20px;
+    .divlogo{
+        margin:0px 0px 20px 30px;
+        img{
+            height:20px;
+        }
+    }
+    .logocontenu{
+        display:flex;
+        align-items: center;
+        margin-left: 30px;
+        .logo1{
+            font-size:20px;
+            height: 20px;
+            color:white;
+            width: 25px;
+        }
+        .contenu1{
+            font-size:20px;
+            height: 20px;
+            color:white;
+            margin:5px;
+        }
+    }
+    .contenu{
+        font-size:20px;
+        margin-left: 30px;
+        color:white;
+        margin: 5px 5px 5px 30px;
+    }
+}
+@media (min-width:400px){
+    main{
+        .presentation{
+            .choix{
+                flex-direction:row;
+                flex-wrap:wrap;
+                justify-content:center;
+                .choix1{
+                    margin:10px 10px;
+                }
+            }
+        }
+    }
+}

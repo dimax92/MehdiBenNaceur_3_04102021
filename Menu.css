@@ -1,0 +1,470 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .fleche {
+  font-size: 20px;
+  margin-right: 50px;
+}
+
+header img {
+  height: 25px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px 20px 0px 20px;
+}
+
+main img {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .presentation {
+  background: #e3e3e3;
+  border-radius: 40px 40px 0px 0px;
+  margin-top: -40px;
+  padding: 20px;
+}
+
+main .presentation .titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .presentation .titre .francaise {
+  font-size: 20px;
+  font-family: 'Shrikhand', cursive;
+}
+
+main .presentation .titre .coeur {
+  font-size: 20px;
+  height: 20px;
+}
+
+main .presentation .type {
+  font-size: 15px;
+  margin: 2px 0px;
+}
+
+main .presentation hr {
+  width: 30px;
+  border: solid #99E2D0 2px;
+  margin: 0px;
+}
+
+main .presentation .choix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 30px 0px;
+}
+
+main .presentation .choix .n1 {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  -webkit-animation-name: toto;
+          animation-name: toto;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+}
+
+@-webkit-keyframes toto {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, 30px);
+            transform: translate(0px, 30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@keyframes toto {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, 30px);
+            transform: translate(0px, 30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+main .presentation .choix .n2 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  -webkit-animation-name: toto;
+          animation-name: toto;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+}
+
+@keyframes toto {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, 30px);
+            transform: translate(0px, 30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+main .presentation .choix .n3 {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  -webkit-animation-name: toto;
+          animation-name: toto;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+}
+
+@keyframes toto {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, 30px);
+            transform: translate(0px, 30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+main .presentation .choix .choix1 {
+  max-height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  margin: 10px 0px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 10px #00000033;
+          box-shadow: 0px 0px 10px #00000033;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  overflow: hidden;
+  max-width: 244px;
+}
+
+main .presentation .choix .choix1 .contenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 189px;
+}
+
+main .presentation .choix .choix1 .contenu .nom {
+  font-size: 13px;
+  margin: 2px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+main .presentation .choix .choix1 .contenu .ingredients {
+  font-size: 11px;
+  margin: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+main .presentation .choix .choix1 .prixanimation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow: hidden;
+  width: 35px;
+  z-index: 1;
+}
+
+main .presentation .choix .choix1 .prixanimation .prix {
+  font-size: 10px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+main .presentation .choix .choix1 .prixanimation .animation {
+  height: 55px;
+  width: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #99E2D0;
+}
+
+main .presentation .choix .choix1 .prixanimation .animation .yes {
+  display: none;
+  font-size: 20px;
+  color: white;
+  overflow: hidden;
+  margin-left: 25px;
+}
+
+main .presentation .choix .choix1:hover .prixanimation {
+  width: 150px;
+  -webkit-animation-name: titi;
+          animation-name: titi;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+}
+
+@-webkit-keyframes titi {
+  from {
+    width: 35px;
+  }
+  to {
+    width: 150px;
+  }
+}
+
+@keyframes titi {
+  from {
+    width: 35px;
+  }
+  to {
+    width: 150px;
+  }
+}
+
+main .presentation .choix .choix1:hover .prixanimation .yes {
+  display: initial;
+  -webkit-animation-name: coco;
+          animation-name: coco;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+}
+
+@-webkit-keyframes coco {
+  from {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes coco {
+  from {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+main .presentation .choix .choix1:not(:hover) .prixanimation {
+  -webkit-animation-name: tito;
+          animation-name: tito;
+  width: 35px;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+}
+
+@-webkit-keyframes tito {
+  from {
+    width: 150px;
+  }
+  to {
+    width: 35px;
+  }
+}
+
+@keyframes tito {
+  from {
+    width: 150px;
+  }
+  to {
+    width: 35px;
+  }
+}
+
+main .presentation .choix .choix1:not(:hover) .prixanimation .yes {
+  display: initial;
+}
+
+main .presentation .divcommander {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0px 90px 0px;
+}
+
+main .presentation .divcommander .commander {
+  height: 50px;
+  font-size: 17px;
+  width: 220px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(173deg, #FF79DA, #FF79DA 10%, #9356DC 100%);
+  color: white;
+  -webkit-box-shadow: 0px 0px 9px #00000069;
+          box-shadow: 0px 0px 9px #00000069;
+}
+
+main .presentation .divcommander .commander:hover {
+  opacity: 0.9;
+  -webkit-box-shadow: 0px 0px 9px black;
+          box-shadow: 0px 0px 9px black;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #2d2d2d;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 0px 30px 0px;
+  margin: 0px 20px 0px 20px;
+}
+
+footer .divlogo {
+  margin: 0px 0px 20px 30px;
+}
+
+footer .divlogo img {
+  height: 20px;
+}
+
+footer .logocontenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 30px;
+}
+
+footer .logocontenu .logo1 {
+  font-size: 20px;
+  height: 20px;
+  color: white;
+  width: 25px;
+}
+
+footer .logocontenu .contenu1 {
+  font-size: 20px;
+  height: 20px;
+  color: white;
+  margin: 5px;
+}
+
+footer .contenu {
+  font-size: 20px;
+  margin-left: 30px;
+  color: white;
+  margin: 5px 5px 5px 30px;
+}
+
+@media (min-width: 400px) {
+  main .presentation .choix {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .presentation .choix .choix1 {
+    margin: 10px 10px;
+  }
+}
+/*# sourceMappingURL=Menu.css.map */
