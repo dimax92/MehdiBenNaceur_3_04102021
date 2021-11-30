@@ -1,0 +1,19 @@
+{
+  "name": "p3_bennaceur_mehdi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimax92/P3_bennaceur_mehdi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimax92/P3_bennaceur_mehdi/issues"
+  },
+  "homepage": "https://github.com/dimax92/P3_bennaceur_mehdi#readme"
+}
