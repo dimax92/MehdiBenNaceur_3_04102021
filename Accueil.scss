@@ -32,7 +32,7 @@ a{
         }
     }
 }
-header{
+.header{
     display:flex;
     justify-content:center;
     flex-direction:column;
@@ -51,15 +51,15 @@ header{
             transform:scale(1);
         }
     }
-    .divimage{
+    &__divimage{
         display:flex;
         justify-content:center;
-        .logo{
+        &__logo{
             height: 25px;
         }
     }
 }
-main{
+.main{
     display:flex;
     flex-direction: column;
     animation-name:mains;
@@ -76,49 +76,49 @@ main{
             transform:scale(1);
         }
     }
-    .cadresup{
+    &__cadresup{
         display: flex;
         justify-content: center;
-        .cadre{
+        &__cadre{
             display:grid;
             grid-template-rows: 15% 85%;
             height: 300px;
             margin-top: 20px;
             width: 100%;
-            .cadre1{
+            &__cadre1{
                 background: linear-gradient(to top, #d5d5d5, #d5d5d5 90%, #a7a7a7 100%);
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                .map{
+                &__map{
                     font-size:20px;
                     height: 18px;
                     margin-right: 20px;
                 }
-                .paris{
+                &__paris{
                     font-size:18px;
                     font-weight: bold;
                 }
             }
-            .cadre2{
+            &__cadre2{
                 background: #e6e5e5;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 padding:20px;
                 justify-content:space-around;
-                .reservez{
+                &__reservez{
                     font-size: 20px;
                     font-weight: bold;
                     text-align: center;
                     margin:0px;
                 }
-                .decouvrez{
+                &__decouvrez{
                     font-size:16px;
                     text-align: center;
                     margin:0px;
                 }
-                .explorer{
+                &__explorer{
                     height: 50px;
                     font-size: 16px;
                     width: 200px;
@@ -128,26 +128,26 @@ main{
                     color: white;
                     box-shadow: 0px 0px 9px #00000069;
                 }
-                .explorer:hover{
+                &__explorer:hover{
                     opacity:0.9;
                     box-shadow: 0px 0px 9px black;
                 }
             }
         }
     }
-    .fonctionnement{
+    &__fonctionnement{
         font-size:20px;
         font-weight:bold;
         margin-left: 20px;
     }
-    .divfonctionnement{
+    &__divfonctionnement{
         display:flex;
         flex-direction: column;
         align-items: center;
-        .divsuperieur{
+        &__divsuperieur{
             display:flex;
             align-items: center;
-            .divnumero{
+            &__divnumero{
                 display: flex;
                 height: 30px;
                 width: 30px;
@@ -157,13 +157,13 @@ main{
                 border-radius: 100px;
                 position: relative;
                 left: 8%;
-                .numero{
+                &__numero{
                     font-size: 20px;
                     margin: 0px;
                     color: white;
                 }
             }
-            .divfonctionnement_div{
+            &__divfonctionnement_div{
                 display:flex;
                 align-items: center;
                 background: #f7f7f7;
@@ -173,155 +173,157 @@ main{
                 border-radius: 15px;
                 width: 210px;
                 box-shadow: 0px 5px 13px 0px #0000003d;
-                .mobile{
+                &__mobile{
                     font-size: 16px;
                     height:16px;
                     width:16px;
                     color: grey;
                 }
-                .choisissez{
+                &__choisissez{
                     font-size:14px;
                     margin:10px;
                     font-weight:bold;
                 }
-                .divmenu{
+                &__divmenu{
                     display:flex;
                     width:16px;
-                    .ellipse{
+                    &__ellipse{
                         font-size:16px;
                         height:16px;
                         color: grey;
                     }
-                    .bars{
+                    &__bars{
                         font-size:16px;
                         height:16px;
                         color: grey;
                     }
                 }
-                .composez{
+                &__composez{
                     font-size:14px;
                     margin:10px;
                     font-weight:bold;
                 }
-                .magasin{
+                &__magasin{
                     font-size:16px;
                     height:16px;
                     width:16px;
                     color: grey;
                 }
-                .degustez{
+                &__degustez{
                     font-size:14px;
                     margin:10px;
                     font-weight:bold;
                 }
             }
-            .divfonctionnement_div:hover {
+            &__divfonctionnement_div:hover {
                 background: #f3e5f5;
             }
         }
     }
-    .menus{
+    &__menus{
         background: #e6e5e5;
         margin-top:40px;
         padding: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        .restaurants{
+        &__restaurants{
             font-size: 20px;
             font-weight: bold;
             width: 100%;
         }
-        .liencarte {
-            margin: 20px;
-            border-radius: 20px;
-            .plats{
-                display:flex;
-                flex-direction: column;
-                align-items: center;
-                background: white;
-                width: 280px;
+        &__menus1{
+            &__liencarte {
+                margin: 20px;
                 border-radius: 20px;
-                .imageplats{
-                    height: 180px;
-                    width: 280px;
-                    object-fit: cover;
-                    border-radius: 20px 20px 0px 0px;
-                    background-size: 100%;
-                    .nouveau {
-                        text-align: center;
-                        background: #99E2D0;
-                        color: green;
-                        width: 70px;
-                        padding: 6px;
-                        border-radius: 3px;
-                        font-weight: bold;
-                        margin: 20px 0px 0px 180px;
-                    }
-                }
-                .presentation{
+                &__plats{
                     display:flex;
-                    width: 300px;
-                    justify-content: space-between;
-                    .presentation2{
-                        display:flex;
-                        flex-direction:column;
-                        margin: 20px 110px 20px 20px;
-                        .nom{
-                            font-size:15px;
-                            margin: 2px 0px;
-                            font-weight:bold;
-                        }
-                        .lieu{
-                            font-size:15px;
-                            margin: 2px 0px;
+                    flex-direction: column;
+                    align-items: center;
+                    background: white;
+                    width: 280px;
+                    border-radius: 20px;
+                    &__imageplats{
+                        height: 180px;
+                        width: 280px;
+                        object-fit: cover;
+                        border-radius: 20px 20px 0px 0px;
+                        background-size: 100%;
+                        &__nouveau {
+                            text-align: center;
+                            background: #99E2D0;
+                            color: green;
+                            width: 70px;
+                            padding: 6px;
+                            border-radius: 3px;
+                            font-weight: bold;
+                            margin: 20px 0px 0px 180px;
                         }
                     }
-                    .animationcoeur{
-                        height:20px;
-                        width:20px;
-                        margin:20px 20px 0px 0px;
-                        .animationcoeur1{
-                            display:none;
+                    &__presentation{
+                        display:flex;
+                        width: 300px;
+                        justify-content: space-between;
+                        &__presentation2{
+                            display:flex;
+                            flex-direction:column;
+                            margin: 20px 110px 20px 20px;
+                            &__nom{
+                                font-size:15px;
+                                margin: 2px 0px;
+                                font-weight:bold;
+                            }
+                            &__lieu{
+                                font-size:15px;
+                                margin: 2px 0px;
+                            }
+                        }
+                        &__animationcoeur{
                             height:20px;
                             width:20px;
-                            .cache{
-                                height: 20px;
-                                width: 20px;
-                                background: white;
-                                position: relative;
-                                bottom: 20px;
-                            }
-                            .coeur1 {
-                                font-size: 20px;
+                            margin:20px 20px 0px 0px;
+                            &__animationcoeur1{
+                                display:none;
                                 height:20px;
-                                background: linear-gradient(357deg, #FF79DA, #FF79DA 10%, #9356DC 100%);
-                                -webkit-background-clip: text;
-                                -webkit-text-fill-color: transparent;
+                                width:20px;
+                                &__cache{
+                                    height: 20px;
+                                    width: 20px;
+                                    background: white;
+                                    position: relative;
+                                    bottom: 20px;
+                                }
+                                &__coeur1 {
+                                    font-size: 20px;
+                                    height:20px;
+                                    background: linear-gradient(357deg, #FF79DA, #FF79DA 10%, #9356DC 100%);
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                }
                             }
-                        }
-                        .coeur{
-                            font-size:20px;
-                            height: 20px;
-                        }
-                    }
-                    .animationcoeur:hover{
-                        .coeur{
-                            display:none;
-                        }
-                        .animationcoeur1{
-                            display:initial;
-                            .cache{
-                                animation-name:jack;
-                                animation-duration:2000ms;
-                                transform-origin:50% 0%;
-                                transform:scale(1,0);
-                                @keyframes jack {
-                                    from{
-                                        transform:scale(1,1);
-                                    }
-                                    to{
+                            &__coeur{
+                                font-size:20px;
+                                height: 20px;
+                            }
+                            &:hover & {
+                                &__coeur{
+                                    display:none;
+                                }
+                                &__animationcoeur1{
+                                    display:initial;
+                                    &__cache{
+                                        animation-name:jack;
+                                        animation-duration:2000ms;
+                                        transform-origin:50% 0%;
                                         transform:scale(1,0);
+                                        @keyframes jack {
+                                            from{
+                                                transform:scale(1,1);
+                                            }
+                                            to{
+                                                transform:scale(1,0);
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -332,7 +334,7 @@ main{
         }
     }
 }
-footer{
+.footermenu{
     display:flex;
     background: #2d2d2d;
     flex-direction:column;
@@ -352,48 +354,57 @@ footer{
             transform:scale(1);
         }
     }
-    .divlogo{
+    &__divlogo{
         margin:0px 0px 20px 30px;
-        img{
+        &__logo{
             height:20px;
         }
     }
-    .logocontenu{
+    &__logocontenu{
         display:flex;
         align-items: center;
         margin-left: 30px;
-        .logo1{
+        &__logo1{
             font-size:20px;
             height: 20px;
             color:white;
             width: 25px;
         }
-        .contenu1{
+        &__contenu1{
             font-size:20px;
             height: 20px;
             color:white;
             margin:5px;
         }
     }
-    .contenu{
+    &__contenu{
         font-size:20px;
         margin-left: 30px;
         color:white;
         margin: 5px 5px 5px 30px;
+    }
+    &__lien {
+        width: fit-content;
+        &__contenu{
+            font-size:20px;
+            margin-left: 30px;
+            color:white;
+            margin: 5px 5px 5px 30px;
+        }
     }
 }
 @media (min-width:400px){
     .loadingspinner{
         left:40%;
     }
-    main{
-        .divfonctionnement{
+    .main{
+        &__divfonctionnement{
             flex-direction:row;
             flex-wrap:wrap;
             justify-content: center;
         }
-        .menus{
-            .menus1{
+        &__menus{
+            &__menus1{
                 flex-direction: row;
                 display: flex;
                 flex-wrap: wrap;

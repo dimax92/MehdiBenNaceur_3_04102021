@@ -60,7 +60,7 @@ a {
   }
 }
 
-header {
+.header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,7 +112,7 @@ header {
   }
 }
 
-header .divimage {
+.header__divimage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,11 +121,11 @@ header .divimage {
           justify-content: center;
 }
 
-header .divimage .logo {
+.header__divimage__logo {
   height: 25px;
 }
 
-main {
+.main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,7 +171,7 @@ main {
   }
 }
 
-main .cadresup {
+.main__cadresup {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,7 +180,7 @@ main .cadresup {
           justify-content: center;
 }
 
-main .cadresup .cadre {
+.main__cadresup__cadre {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 15% 85%;
@@ -190,7 +190,7 @@ main .cadresup .cadre {
   width: 100%;
 }
 
-main .cadresup .cadre .cadre1 {
+.main__cadresup__cadre__cadre1 {
   background: -webkit-gradient(linear, left bottom, left top, from(#d5d5d5), color-stop(90%, #d5d5d5), to(#a7a7a7));
   background: linear-gradient(to top, #d5d5d5, #d5d5d5 90%, #a7a7a7 100%);
   display: -webkit-box;
@@ -204,18 +204,18 @@ main .cadresup .cadre .cadre1 {
           align-items: center;
 }
 
-main .cadresup .cadre .cadre1 .map {
+.main__cadresup__cadre__cadre1__map {
   font-size: 20px;
   height: 18px;
   margin-right: 20px;
 }
 
-main .cadresup .cadre .cadre1 .paris {
+.main__cadresup__cadre__cadre1__paris {
   font-size: 18px;
   font-weight: bold;
 }
 
-main .cadresup .cadre .cadre2 {
+.main__cadresup__cadre__cadre2 {
   background: #e6e5e5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -232,20 +232,20 @@ main .cadresup .cadre .cadre2 {
       justify-content: space-around;
 }
 
-main .cadresup .cadre .cadre2 .reservez {
+.main__cadresup__cadre__cadre2__reservez {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
   margin: 0px;
 }
 
-main .cadresup .cadre .cadre2 .decouvrez {
+.main__cadresup__cadre__cadre2__decouvrez {
   font-size: 16px;
   text-align: center;
   margin: 0px;
 }
 
-main .cadresup .cadre .cadre2 .explorer {
+.main__cadresup__cadre__cadre2__explorer {
   height: 50px;
   font-size: 16px;
   width: 200px;
@@ -257,19 +257,19 @@ main .cadresup .cadre .cadre2 .explorer {
           box-shadow: 0px 0px 9px #00000069;
 }
 
-main .cadresup .cadre .cadre2 .explorer:hover {
+.main__cadresup__cadre__cadre2__explorer:hover {
   opacity: 0.9;
   -webkit-box-shadow: 0px 0px 9px black;
           box-shadow: 0px 0px 9px black;
 }
 
-main .fonctionnement {
+.main__fonctionnement {
   font-size: 20px;
   font-weight: bold;
   margin-left: 20px;
 }
 
-main .divfonctionnement {
+.main__divfonctionnement {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,7 +282,7 @@ main .divfonctionnement {
           align-items: center;
 }
 
-main .divfonctionnement .divsuperieur {
+.main__divfonctionnement__divsuperieur {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -291,7 +291,7 @@ main .divfonctionnement .divsuperieur {
           align-items: center;
 }
 
-main .divfonctionnement .divsuperieur .divnumero {
+.main__divfonctionnement__divsuperieur__divnumero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -309,13 +309,13 @@ main .divfonctionnement .divsuperieur .divnumero {
   left: 8%;
 }
 
-main .divfonctionnement .divsuperieur .divnumero .numero {
+.main__divfonctionnement__divsuperieur__divnumero__numero {
   font-size: 20px;
   margin: 0px;
   color: white;
 }
 
-main .divfonctionnement .divsuperieur .divfonctionnement_div {
+.main__divfonctionnement__divsuperieur__divfonctionnement_div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -334,62 +334,62 @@ main .divfonctionnement .divsuperieur .divfonctionnement_div {
           box-shadow: 0px 5px 13px 0px #0000003d;
 }
 
-main .divfonctionnement .divsuperieur .divfonctionnement_div .mobile {
+.main__divfonctionnement__divsuperieur__divfonctionnement_div__mobile {
   font-size: 16px;
   height: 16px;
   width: 16px;
   color: grey;
 }
 
-main .divfonctionnement .divsuperieur .divfonctionnement_div .choisissez {
+.main__divfonctionnement__divsuperieur__divfonctionnement_div__choisissez {
   font-size: 14px;
   margin: 10px;
   font-weight: bold;
 }
 
-main .divfonctionnement .divsuperieur .divfonctionnement_div .divmenu {
+.main__divfonctionnement__divsuperieur__divfonctionnement_div__divmenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 16px;
 }
 
-main .divfonctionnement .divsuperieur .divfonctionnement_div .divmenu .ellipse {
+.main__divfonctionnement__divsuperieur__divfonctionnement_div__divmenu__ellipse {
   font-size: 16px;
   height: 16px;
   color: grey;
 }
 
-main .divfonctionnement .divsuperieur .divfonctionnement_div .divmenu .bars {
+.main__divfonctionnement__divsuperieur__divfonctionnement_div__divmenu__bars {
   font-size: 16px;
   height: 16px;
   color: grey;
 }
 
-main .divfonctionnement .divsuperieur .divfonctionnement_div .composez {
+.main__divfonctionnement__divsuperieur__divfonctionnement_div__composez {
   font-size: 14px;
   margin: 10px;
   font-weight: bold;
 }
 
-main .divfonctionnement .divsuperieur .divfonctionnement_div .magasin {
+.main__divfonctionnement__divsuperieur__divfonctionnement_div__magasin {
   font-size: 16px;
   height: 16px;
   width: 16px;
   color: grey;
 }
 
-main .divfonctionnement .divsuperieur .divfonctionnement_div .degustez {
+.main__divfonctionnement__divsuperieur__divfonctionnement_div__degustez {
   font-size: 14px;
   margin: 10px;
   font-weight: bold;
 }
 
-main .divfonctionnement .divsuperieur .divfonctionnement_div:hover {
+.main__divfonctionnement__divsuperieur__divfonctionnement_div:hover {
   background: #f3e5f5;
 }
 
-main .menus {
+.main__menus {
   background: #e6e5e5;
   margin-top: 40px;
   padding: 20px;
@@ -405,18 +405,18 @@ main .menus {
           align-items: center;
 }
 
-main .menus .restaurants {
+.main__menus__restaurants {
   font-size: 20px;
   font-weight: bold;
   width: 100%;
 }
 
-main .menus .liencarte {
+.main__menus__menus1__liencarte {
   margin: 20px;
   border-radius: 20px;
 }
 
-main .menus .liencarte .plats {
+.main__menus__menus1__liencarte__plats {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -432,7 +432,7 @@ main .menus .liencarte .plats {
   border-radius: 20px;
 }
 
-main .menus .liencarte .plats .imageplats {
+.main__menus__menus1__liencarte__plats__imageplats {
   height: 180px;
   width: 280px;
   -o-object-fit: cover;
@@ -441,7 +441,7 @@ main .menus .liencarte .plats .imageplats {
   background-size: 100%;
 }
 
-main .menus .liencarte .plats .imageplats .nouveau {
+.main__menus__menus1__liencarte__plats__imageplats__nouveau {
   text-align: center;
   background: #99E2D0;
   color: green;
@@ -452,7 +452,7 @@ main .menus .liencarte .plats .imageplats .nouveau {
   margin: 20px 0px 0px 180px;
 }
 
-main .menus .liencarte .plats .presentation {
+.main__menus__menus1__liencarte__plats__presentation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -462,7 +462,7 @@ main .menus .liencarte .plats .presentation {
           justify-content: space-between;
 }
 
-main .menus .liencarte .plats .presentation .presentation2 {
+.main__menus__menus1__liencarte__plats__presentation__presentation2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -473,30 +473,30 @@ main .menus .liencarte .plats .presentation .presentation2 {
   margin: 20px 110px 20px 20px;
 }
 
-main .menus .liencarte .plats .presentation .presentation2 .nom {
+.main__menus__menus1__liencarte__plats__presentation__presentation2__nom {
   font-size: 15px;
   margin: 2px 0px;
   font-weight: bold;
 }
 
-main .menus .liencarte .plats .presentation .presentation2 .lieu {
+.main__menus__menus1__liencarte__plats__presentation__presentation2__lieu {
   font-size: 15px;
   margin: 2px 0px;
 }
 
-main .menus .liencarte .plats .presentation .animationcoeur {
+.main__menus__menus1__liencarte__plats__presentation__animationcoeur {
   height: 20px;
   width: 20px;
   margin: 20px 20px 0px 0px;
 }
 
-main .menus .liencarte .plats .presentation .animationcoeur .animationcoeur1 {
+.main__menus__menus1__liencarte__plats__presentation__animationcoeur__animationcoeur1 {
   display: none;
   height: 20px;
   width: 20px;
 }
 
-main .menus .liencarte .plats .presentation .animationcoeur .animationcoeur1 .cache {
+.main__menus__menus1__liencarte__plats__presentation__animationcoeur__animationcoeur1__cache {
   height: 20px;
   width: 20px;
   background: white;
@@ -504,7 +504,7 @@ main .menus .liencarte .plats .presentation .animationcoeur .animationcoeur1 .ca
   bottom: 20px;
 }
 
-main .menus .liencarte .plats .presentation .animationcoeur .animationcoeur1 .coeur1 {
+.main__menus__menus1__liencarte__plats__presentation__animationcoeur__animationcoeur1__coeur1 {
   font-size: 20px;
   height: 20px;
   background: linear-gradient(357deg, #FF79DA, #FF79DA 10%, #9356DC 100%);
@@ -512,20 +512,20 @@ main .menus .liencarte .plats .presentation .animationcoeur .animationcoeur1 .co
   -webkit-text-fill-color: transparent;
 }
 
-main .menus .liencarte .plats .presentation .animationcoeur .coeur {
+.main__menus__menus1__liencarte__plats__presentation__animationcoeur__coeur {
   font-size: 20px;
   height: 20px;
 }
 
-main .menus .liencarte .plats .presentation .animationcoeur:hover .coeur {
+.main__menus__menus1__liencarte__plats__presentation__animationcoeur:hover .main__menus__menus1__liencarte__plats__presentation__animationcoeur__coeur {
   display: none;
 }
 
-main .menus .liencarte .plats .presentation .animationcoeur:hover .animationcoeur1 {
+.main__menus__menus1__liencarte__plats__presentation__animationcoeur:hover .main__menus__menus1__liencarte__plats__presentation__animationcoeur__animationcoeur1 {
   display: initial;
 }
 
-main .menus .liencarte .plats .presentation .animationcoeur:hover .animationcoeur1 .cache {
+.main__menus__menus1__liencarte__plats__presentation__animationcoeur:hover .main__menus__menus1__liencarte__plats__presentation__animationcoeur__animationcoeur1__cache {
   -webkit-animation-name: jack;
           animation-name: jack;
   -webkit-animation-duration: 2000ms;
@@ -558,7 +558,7 @@ main .menus .liencarte .plats .presentation .animationcoeur:hover .animationcoeu
   }
 }
 
-footer {
+.footermenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -609,15 +609,15 @@ footer {
   }
 }
 
-footer .divlogo {
+.footermenu__divlogo {
   margin: 0px 0px 20px 30px;
 }
 
-footer .divlogo img {
+.footermenu__divlogo__logo {
   height: 20px;
 }
 
-footer .logocontenu {
+.footermenu__logocontenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -627,21 +627,34 @@ footer .logocontenu {
   margin-left: 30px;
 }
 
-footer .logocontenu .logo1 {
+.footermenu__logocontenu__logo1 {
   font-size: 20px;
   height: 20px;
   color: white;
   width: 25px;
 }
 
-footer .logocontenu .contenu1 {
+.footermenu__logocontenu__contenu1 {
   font-size: 20px;
   height: 20px;
   color: white;
   margin: 5px;
 }
 
-footer .contenu {
+.footermenu__contenu {
+  font-size: 20px;
+  margin-left: 30px;
+  color: white;
+  margin: 5px 5px 5px 30px;
+}
+
+.footermenu__lien {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.footermenu__lien__contenu {
   font-size: 20px;
   margin-left: 30px;
   color: white;
@@ -652,7 +665,7 @@ footer .contenu {
   .loadingspinner {
     left: 40%;
   }
-  main .divfonctionnement {
+  .main__divfonctionnement {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -663,7 +676,7 @@ footer .contenu {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  main .menus .menus1 {
+  .main__menus__menus1 {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;

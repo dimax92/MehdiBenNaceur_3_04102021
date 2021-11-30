@@ -9,7 +9,7 @@ a {
   color: black;
 }
 
-header {
+.headermenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,16 +18,16 @@ header {
           justify-content: center;
 }
 
-header .fleche {
+.headermenu__lien__fleche {
   font-size: 20px;
   margin-right: 50px;
 }
 
-header img {
+.headermenu__lien__image {
   height: 25px;
 }
 
-main {
+.mainmenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,20 +41,20 @@ main {
   margin: 20px 0px 0px 0px;
 }
 
-main img {
+.mainmenu__image {
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-main .presentation {
+.mainmenu__presentation {
   background: #e3e3e3;
   border-radius: 40px 40px 0px 0px;
   margin-top: -40px;
   padding: 20px;
 }
 
-main .presentation .titre {
+.mainmenu__presentation__titre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,28 +66,28 @@ main .presentation .titre {
           justify-content: space-between;
 }
 
-main .presentation .titre .francaise {
+.mainmenu__presentation__titre__francaise {
   font-size: 20px;
   font-family: 'Shrikhand', cursive;
 }
 
-main .presentation .titre .coeur {
+.mainmenu__presentation__titre__coeur {
   font-size: 20px;
   height: 20px;
 }
 
-main .presentation .type {
+.mainmenu__presentation__type {
   font-size: 15px;
   margin: 2px 0px;
 }
 
-main .presentation hr {
+.mainmenu__presentation__hr {
   width: 30px;
   border: solid #99E2D0 2px;
   margin: 0px;
 }
 
-main .presentation .choix {
+.mainmenu__presentation__choix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,7 +101,7 @@ main .presentation .choix {
   margin: 30px 0px;
 }
 
-main .presentation .choix .n1 {
+.mainmenu__presentation__choix .n1 {
   -webkit-animation-delay: 100ms;
           animation-delay: 100ms;
   opacity: 1;
@@ -139,7 +139,7 @@ main .presentation .choix .n1 {
   }
 }
 
-main .presentation .choix .n2 {
+.mainmenu__presentation__choix .n2 {
   -webkit-animation-delay: 200ms;
           animation-delay: 200ms;
   opacity: 1;
@@ -164,7 +164,7 @@ main .presentation .choix .n2 {
   }
 }
 
-main .presentation .choix .n3 {
+.mainmenu__presentation__choix .n3 {
   -webkit-animation-delay: 300ms;
           animation-delay: 300ms;
   opacity: 1;
@@ -189,7 +189,7 @@ main .presentation .choix .n3 {
   }
 }
 
-main .presentation .choix .choix1 {
+.mainmenu__presentation__choix__choix1 {
   max-height: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,7 +209,7 @@ main .presentation .choix .choix1 {
   max-width: 244px;
 }
 
-main .presentation .choix .choix1 .contenu {
+.mainmenu__presentation__choix__choix1__contenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -224,7 +224,7 @@ main .presentation .choix .choix1 .contenu {
   width: 189px;
 }
 
-main .presentation .choix .choix1 .contenu .nom {
+.mainmenu__presentation__choix__choix1__contenu__nom {
   font-size: 13px;
   margin: 2px;
   font-weight: bold;
@@ -233,7 +233,7 @@ main .presentation .choix .choix1 .contenu .nom {
   text-overflow: ellipsis;
 }
 
-main .presentation .choix .choix1 .contenu .ingredients {
+.mainmenu__presentation__choix__choix1__contenu__ingredients {
   font-size: 11px;
   margin: 2px;
   white-space: nowrap;
@@ -241,7 +241,7 @@ main .presentation .choix .choix1 .contenu .ingredients {
   text-overflow: ellipsis;
 }
 
-main .presentation .choix .choix1 .prixanimation {
+.mainmenu__presentation__choix__choix1__prixanimation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -257,13 +257,13 @@ main .presentation .choix .choix1 .prixanimation {
   z-index: 1;
 }
 
-main .presentation .choix .choix1 .prixanimation .prix {
+.mainmenu__presentation__choix__choix1__prixanimation__prix {
   font-size: 10px;
   margin: 10px;
   font-weight: bold;
 }
 
-main .presentation .choix .choix1 .prixanimation .animation {
+.mainmenu__presentation__choix__choix1__prixanimation__animation {
   height: 55px;
   width: 70px;
   display: -webkit-box;
@@ -276,7 +276,7 @@ main .presentation .choix .choix1 .prixanimation .animation {
   background: #99E2D0;
 }
 
-main .presentation .choix .choix1 .prixanimation .animation .yes {
+.mainmenu__presentation__choix__choix1__prixanimation__animation__yes {
   display: none;
   font-size: 20px;
   color: white;
@@ -284,7 +284,7 @@ main .presentation .choix .choix1 .prixanimation .animation .yes {
   margin-left: 25px;
 }
 
-main .presentation .choix .choix1:hover .prixanimation {
+.mainmenu__presentation__choix__choix1:hover .mainmenu__presentation__choix__choix1__prixanimation {
   width: 150px;
   -webkit-animation-name: titi;
           animation-name: titi;
@@ -312,7 +312,7 @@ main .presentation .choix .choix1:hover .prixanimation {
   }
 }
 
-main .presentation .choix .choix1:hover .prixanimation .yes {
+.mainmenu__presentation__choix__choix1:hover .mainmenu__presentation__choix__choix1__prixanimation__animation__yes {
   display: initial;
   -webkit-animation-name: coco;
           animation-name: coco;
@@ -342,7 +342,7 @@ main .presentation .choix .choix1:hover .prixanimation .yes {
   }
 }
 
-main .presentation .choix .choix1:not(:hover) .prixanimation {
+.mainmenu__presentation__choix__choix1:not(:hover) .mainmenu__presentation__choix__choix1__prixanimation {
   -webkit-animation-name: tito;
           animation-name: tito;
   width: 35px;
@@ -370,11 +370,11 @@ main .presentation .choix .choix1:not(:hover) .prixanimation {
   }
 }
 
-main .presentation .choix .choix1:not(:hover) .prixanimation .yes {
+.mainmenu__presentation__choix__choix1:not(:hover) .mainmenu__presentation__choix__choix1__prixanimation__animation__yes {
   display: initial;
 }
 
-main .presentation .divcommander {
+.mainmenu__presentation__divcommander {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -384,7 +384,7 @@ main .presentation .divcommander {
   margin: 50px 0px 90px 0px;
 }
 
-main .presentation .divcommander .commander {
+.mainmenu__presentation__divcommander__commander {
   height: 50px;
   font-size: 17px;
   width: 220px;
@@ -396,13 +396,13 @@ main .presentation .divcommander .commander {
           box-shadow: 0px 0px 9px #00000069;
 }
 
-main .presentation .divcommander .commander:hover {
+.mainmenu__presentation__divcommander__commander:hover {
   opacity: 0.9;
   -webkit-box-shadow: 0px 0px 9px black;
           box-shadow: 0px 0px 9px black;
 }
 
-footer {
+.footermenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -415,15 +415,15 @@ footer {
   margin: 0px;
 }
 
-footer .divlogo {
+.footermenu__divlogo {
   margin: 0px 0px 20px 30px;
 }
 
-footer .divlogo img {
+.footermenu__divlogo__logo {
   height: 20px;
 }
 
-footer .logocontenu {
+.footermenu__logocontenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,21 +433,34 @@ footer .logocontenu {
   margin-left: 30px;
 }
 
-footer .logocontenu .logo1 {
+.footermenu__logocontenu__logo1 {
   font-size: 20px;
   height: 20px;
   color: white;
   width: 25px;
 }
 
-footer .logocontenu .contenu1 {
+.footermenu__logocontenu__contenu1 {
   font-size: 20px;
   height: 20px;
   color: white;
   margin: 5px;
 }
 
-footer .contenu {
+.footermenu__contenu {
+  font-size: 20px;
+  margin-left: 30px;
+  color: white;
+  margin: 5px 5px 5px 30px;
+}
+
+.footermenu__lien {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.footermenu__lien__contenu {
   font-size: 20px;
   margin-left: 30px;
   color: white;
@@ -455,7 +468,7 @@ footer .contenu {
 }
 
 @media (min-width: 400px) {
-  main .presentation .choix {
+  .mainmenu__presentation__choix {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -466,7 +479,7 @@ footer .contenu {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  main .presentation .choix .choix1 {
+  .mainmenu__presentation__choix__choix1 {
     margin: 10px 10px;
   }
 }
