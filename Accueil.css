@@ -17,7 +17,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 1;
-  font-size: 200px;
+  font-size: 0px;
   position: relative;
   left: 30%;
   top: 200px;
@@ -28,35 +28,35 @@ a {
           animation-duration: 1000ms;
   -webkit-animation-iteration-count: 3;
           animation-iteration-count: 3;
-  -webkit-transform: scale(0);
-          transform: scale(0);
 }
 
 @-webkit-keyframes spinner {
-  from {
+  0% {
+    font-size: 200px;
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
-  to {
+  100% {
+    font-size: 200px;
     -webkit-transform: rotate(-360deg);
             transform: rotate(-360deg);
   }
 }
 
 @keyframes spinner {
-  from {
+  0% {
+    font-size: 200px;
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
-  to {
+  100% {
+    font-size: 200px;
     -webkit-transform: rotate(-360deg);
             transform: rotate(-360deg);
   }
 }
 
 header {
-  position: relative;
-  bottom: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,8 +122,6 @@ header .divimage .logo {
 }
 
 main {
-  position: relative;
-  bottom: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -536,8 +534,6 @@ main .menus .plats .presentation .animationcoeur:hover .animationcoeur1 .cache {
 }
 
 footer {
-  position: relative;
-  bottom: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
