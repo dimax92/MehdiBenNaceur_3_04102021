@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("images.css");
 * {
   font-family: 'Roboto', sans-serif;
 }
@@ -6,6 +7,9 @@
 a {
   text-decoration: none;
   color: black;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .loadingspinner {
@@ -183,6 +187,7 @@ main .cadresup .cadre {
       grid-template-rows: 15% 85%;
   height: 300px;
   margin-top: 20px;
+  width: 100%;
 }
 
 main .cadresup .cadre .cadre1 {
@@ -261,6 +266,7 @@ main .cadresup .cadre .cadre2 .explorer:hover {
 main .fonctionnement {
   font-size: 20px;
   font-weight: bold;
+  margin-left: 20px;
 }
 
 main .divfonctionnement {
@@ -379,6 +385,10 @@ main .divfonctionnement .divsuperieur .divfonctionnement_div .degustez {
   font-weight: bold;
 }
 
+main .divfonctionnement .divsuperieur .divfonctionnement_div:hover {
+  background: #f3e5f5;
+}
+
 main .menus {
   background: #e6e5e5;
   margin-top: 40px;
@@ -398,11 +408,15 @@ main .menus {
 main .menus .restaurants {
   font-size: 20px;
   font-weight: bold;
-  margin-right: 200px;
-  margin-left: 25px;
+  width: 100%;
 }
 
-main .menus .plats {
+main .menus .liencarte {
+  margin: 20px;
+  border-radius: 20px;
+}
+
+main .menus .liencarte .plats {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -415,19 +429,30 @@ main .menus .plats {
           align-items: center;
   background: white;
   width: 280px;
-  margin: 20px;
   border-radius: 20px;
 }
 
-main .menus .plats .imageplats {
+main .menus .liencarte .plats .imageplats {
   height: 180px;
   width: 280px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px 20px 0px 0px;
+  background-size: 100%;
 }
 
-main .menus .plats .presentation {
+main .menus .liencarte .plats .imageplats .nouveau {
+  text-align: center;
+  background: #99E2D0;
+  color: green;
+  width: 70px;
+  padding: 6px;
+  border-radius: 3px;
+  font-weight: bold;
+  margin: 20px 0px 0px 180px;
+}
+
+main .menus .liencarte .plats .presentation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -437,7 +462,7 @@ main .menus .plats .presentation {
           justify-content: space-between;
 }
 
-main .menus .plats .presentation .presentation2 {
+main .menus .liencarte .plats .presentation .presentation2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,30 +473,30 @@ main .menus .plats .presentation .presentation2 {
   margin: 20px 110px 20px 20px;
 }
 
-main .menus .plats .presentation .presentation2 .nom {
+main .menus .liencarte .plats .presentation .presentation2 .nom {
   font-size: 15px;
   margin: 2px 0px;
   font-weight: bold;
 }
 
-main .menus .plats .presentation .presentation2 .lieu {
+main .menus .liencarte .plats .presentation .presentation2 .lieu {
   font-size: 15px;
   margin: 2px 0px;
 }
 
-main .menus .plats .presentation .animationcoeur {
+main .menus .liencarte .plats .presentation .animationcoeur {
   height: 20px;
   width: 20px;
   margin: 20px 20px 0px 0px;
 }
 
-main .menus .plats .presentation .animationcoeur .animationcoeur1 {
+main .menus .liencarte .plats .presentation .animationcoeur .animationcoeur1 {
   display: none;
   height: 20px;
   width: 20px;
 }
 
-main .menus .plats .presentation .animationcoeur .animationcoeur1 .cache {
+main .menus .liencarte .plats .presentation .animationcoeur .animationcoeur1 .cache {
   height: 20px;
   width: 20px;
   background: white;
@@ -479,7 +504,7 @@ main .menus .plats .presentation .animationcoeur .animationcoeur1 .cache {
   bottom: 20px;
 }
 
-main .menus .plats .presentation .animationcoeur .animationcoeur1 .coeur1 {
+main .menus .liencarte .plats .presentation .animationcoeur .animationcoeur1 .coeur1 {
   font-size: 20px;
   height: 20px;
   background: linear-gradient(357deg, #FF79DA, #FF79DA 10%, #9356DC 100%);
@@ -487,20 +512,20 @@ main .menus .plats .presentation .animationcoeur .animationcoeur1 .coeur1 {
   -webkit-text-fill-color: transparent;
 }
 
-main .menus .plats .presentation .animationcoeur .coeur {
+main .menus .liencarte .plats .presentation .animationcoeur .coeur {
   font-size: 20px;
   height: 20px;
 }
 
-main .menus .plats .presentation .animationcoeur:hover .coeur {
+main .menus .liencarte .plats .presentation .animationcoeur:hover .coeur {
   display: none;
 }
 
-main .menus .plats .presentation .animationcoeur:hover .animationcoeur1 {
+main .menus .liencarte .plats .presentation .animationcoeur:hover .animationcoeur1 {
   display: initial;
 }
 
-main .menus .plats .presentation .animationcoeur:hover .animationcoeur1 .cache {
+main .menus .liencarte .plats .presentation .animationcoeur:hover .animationcoeur1 .cache {
   -webkit-animation-name: jack;
           animation-name: jack;
   -webkit-animation-duration: 2000ms;
