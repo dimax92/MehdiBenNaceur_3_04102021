@@ -1,12 +1,10 @@
-.loadingspinner{
-    color:#9356DC;
-    display:flex;
-    justify-content:center;
-    z-index:1;
-    font-size:0px;
-    position:relative;
-    left:30%;
-    top:200px;
+.loadingspinner {
+    color: #9356DC;
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+    font-size: 0px;
+    margin-top: 0%;
     background:transparent;
     @include loadingspinner;
 }

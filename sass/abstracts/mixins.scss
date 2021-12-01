@@ -55,45 +55,18 @@
         }
     }
 }
-@mixin nothovercontenu {
-    width: 190px;
-    animation-name: retourcontenu;
-    animation-duration: 1000ms;
-    @keyframes retourcontenu {
-        from{
-            width: 120px;
-        }
-        to{
-            width: 190px;
-        }
-    }
-}
-@mixin nothoverprixanimation {
-    position:relative;
-    left: 70px;
-    animation-name: retourprixanimation;
-    animation-duration: 1000ms;
-    @keyframes retourprixanimation {
-        from{
-            position: relative;
-            left: 0px;
-        }
-        to{
-            position: relative;
-            left: 70px;
-        }
-    }
-}
 @mixin loadingspinner {
     animation-name:spinner;
     animation-duration:1000ms;
     animation-iteration-count:3;
     @keyframes spinner {
         0%{
+            margin-top: 50%;
             font-size:200px;
             transform:rotate(360deg);
         }
         100%{
+            margin-top: 50%;
             font-size:200px;
             transform:rotate(-360deg);
         }
