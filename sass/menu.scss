@@ -99,15 +99,15 @@ a{
                 justify-content: space-between;
                 align-items: flex-end;
                 overflow:hidden;
-                max-width:244px;
+                width:244px;
                 &__contenu{
-                    display:flex;
+                    display: flex;
                     flex-direction: column;
-                    margin:10px;
+                    margin: 10px;
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
-                    width:189px;
+                    width: 190px;
                     &__nom{
                         font-size:13px;
                         margin:2px;
@@ -128,13 +128,16 @@ a{
                     display: flex;
                     align-items: flex-end;
                     flex-direction: row;
-                    overflow:hidden;
-                    width:35px;
-                    z-index:1;
+                    overflow: hidden;
+                    margin-left: -70px;
+                    position: relative;
+                    left: 70px;
+                    z-index: 1;
                     &__prix{
                         font-size:10px;
                         margin: 10px;
                         font-weight:bold;
+                        width: 16px;
                     }
                     &__animation{
                         height: 55px;
@@ -144,7 +147,6 @@ a{
                         align-items:center;
                         background: #99E2D0;
                         &__yes{
-                            display:none;
                             font-size:20px;
                             color:white;
                             overflow:hidden;
@@ -153,22 +155,36 @@ a{
                     }
                 }
                 &:hover & {
-                    &__prixanimation{
-                        width:150px;
-                        animation-name:titi;
-                        animation-duration:1000ms;
-                        transform-origin:100% 50%;
+                    &__contenu {
+                        width: 120px;
+                        animation-name: titi;
+                        animation-duration: 1000ms;
                         @keyframes titi {
                             from{
-                                width:35px;
+                                width: 190px;
                             }
                             to{
-                                width:150px;
+                                width: 120px;
+                            }
+                        }
+                    }
+                    &__prixanimation {
+                        position:relative;
+                        left: 0px;
+                        animation-name: prixanimation;
+                        animation-duration: 1000ms;
+                        @keyframes prixanimation {
+                            from{
+                                position: relative;
+                                left: 70px;
+                            }
+                            to{
+                                position: relative;
+                                left: 0px;
                             }
                         }
                         &__animation {
                             &__yes{
-                                display:initial;
                                 animation-name:coco;
                                 animation-duration:1000ms;
                                 @keyframes coco {
@@ -184,22 +200,32 @@ a{
                     }
                 }
                 &:not(:hover) & {
-                    &__prixanimation{
-                        animation-name:tito;
-                        width:35px;
-                        animation-duration:1000ms;
-                        transform-origin:0% 50%;
-                        @keyframes tito {
+                    &__contenu {
+                        width: 190px;
+                        animation-name: retourcontenu;
+                        animation-duration: 1000ms;
+                        @keyframes retourcontenu {
                             from{
-                                width:150px;
+                                width: 120px;
                             }
                             to{
-                                width:35px;
+                                width: 190px;
                             }
                         }
-                        &__animation {
-                            &__yes{
-                                display:initial;
+                    }
+                    &__prixanimation {
+                        position:relative;
+                        left: 70px;
+                        animation-name: retourprixanimation;
+                        animation-duration: 1000ms;
+                        @keyframes retourprixanimation {
+                            from{
+                                position: relative;
+                                left: 0px;
+                            }
+                            to{
+                                position: relative;
+                                left: 70px;
                             }
                         }
                     }

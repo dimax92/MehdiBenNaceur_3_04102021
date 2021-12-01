@@ -539,7 +539,7 @@ a {
   justify-content: space-between;
   align-items: flex-end;
   overflow: hidden;
-  max-width: 244px;
+  width: 244px;
 }
 .mainmenu__presentation__choix__choix1__contenu {
   display: flex;
@@ -548,7 +548,7 @@ a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 189px;
+  width: 190px;
 }
 .mainmenu__presentation__choix__choix1__contenu__nom {
   font-size: 13px;
@@ -570,13 +570,16 @@ a {
   align-items: flex-end;
   flex-direction: row;
   overflow: hidden;
-  width: 35px;
+  margin-left: -70px;
+  position: relative;
+  left: 70px;
   z-index: 1;
 }
 .mainmenu__presentation__choix__choix1__prixanimation__prix {
   font-size: 10px;
   margin: 10px;
   font-weight: bold;
+  width: 16px;
 }
 .mainmenu__presentation__choix__choix1__prixanimation__animation {
   height: 55px;
@@ -587,28 +590,41 @@ a {
   background: #99E2D0;
 }
 .mainmenu__presentation__choix__choix1__prixanimation__animation__yes {
-  display: none;
   font-size: 20px;
   color: white;
   overflow: hidden;
   margin-left: 25px;
 }
-.mainmenu__presentation__choix__choix1:hover .mainmenu__presentation__choix__choix1__prixanimation {
-  width: 150px;
+.mainmenu__presentation__choix__choix1:hover .mainmenu__presentation__choix__choix1__contenu {
+  width: 120px;
   animation-name: titi;
   animation-duration: 1000ms;
-  transform-origin: 100% 50%;
 }
 @keyframes titi {
   from {
-    width: 35px;
+    width: 190px;
   }
   to {
-    width: 150px;
+    width: 120px;
+  }
+}
+.mainmenu__presentation__choix__choix1:hover .mainmenu__presentation__choix__choix1__prixanimation {
+  position: relative;
+  left: 0px;
+  animation-name: prixanimation;
+  animation-duration: 1000ms;
+}
+@keyframes prixanimation {
+  from {
+    position: relative;
+    left: 70px;
+  }
+  to {
+    position: relative;
+    left: 0px;
   }
 }
 .mainmenu__presentation__choix__choix1:hover .mainmenu__presentation__choix__choix1__prixanimation__animation__yes {
-  display: initial;
   animation-name: coco;
   animation-duration: 1000ms;
 }
@@ -620,22 +636,34 @@ a {
     transform: rotate(360deg);
   }
 }
-.mainmenu__presentation__choix__choix1:not(:hover) .mainmenu__presentation__choix__choix1__prixanimation {
-  animation-name: tito;
-  width: 35px;
+.mainmenu__presentation__choix__choix1:not(:hover) .mainmenu__presentation__choix__choix1__contenu {
+  width: 190px;
+  animation-name: retourcontenu;
   animation-duration: 1000ms;
-  transform-origin: 0% 50%;
 }
-@keyframes tito {
+@keyframes retourcontenu {
   from {
-    width: 150px;
+    width: 120px;
   }
   to {
-    width: 35px;
+    width: 190px;
   }
 }
-.mainmenu__presentation__choix__choix1:not(:hover) .mainmenu__presentation__choix__choix1__prixanimation__animation__yes {
-  display: initial;
+.mainmenu__presentation__choix__choix1:not(:hover) .mainmenu__presentation__choix__choix1__prixanimation {
+  position: relative;
+  left: 70px;
+  animation-name: retourprixanimation;
+  animation-duration: 1000ms;
+}
+@keyframes retourprixanimation {
+  from {
+    position: relative;
+    left: 0px;
+  }
+  to {
+    position: relative;
+    left: 70px;
+  }
 }
 .mainmenu__presentation__divcommander {
   display: flex;
@@ -713,6 +741,22 @@ a {
     margin: 10px 10px;
   }
 }
+/*.palettegout {
+    background: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-size: 100%;
+}
+.noteenchantee {
+    background: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+    background-size: 100%;
+}
+.lafrancaise {
+    background: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    background-size: 100%;
+}
+.delicesens {
+    background: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+    background-size: 100%;
+}*/
 .palettegout {
   background: url(/P3_bennaceur_mehdi/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: 100%;
