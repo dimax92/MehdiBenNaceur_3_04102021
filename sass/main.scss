@@ -1,3 +1,16 @@
-@use "./accueil.scss";
-@use "./menu.scss";
-@use "./images.scss";
+@import "./base/typography.scss";
+
+@import "./abstracts/mixins.scss";
+
+@import "./components/loadingspinner.scss";
+
+@import "./layout/header.scss";
+@import "./layout/headermenu.scss";
+@import "./layout/main.scss";
+@import "./layout/mainmenu.scss";
+@import "./layout/footer.scss";
+@import "./layout/footermenu.scss";
+
+@import "./pages/images.scss";
+@import "./pages/mediaacceuil.scss";
+@import "./pages/mediamenu.scss";

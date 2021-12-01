@@ -1,0 +1,117 @@
+@mixin affichagechoix {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    animation-name: toto;
+    animation-duration:1000ms;
+    @keyframes toto{
+       0%{
+           opacity:0;
+           transform: translate(0px, 30px);
+        }
+       100%{
+           opacity:1;
+           transform: translate(0px, 0px);
+        }
+    }
+}
+@mixin hovercontenu {
+    width: 120px;
+    animation-name: titi;
+    animation-duration: 1000ms;
+    @keyframes titi {
+        from{
+            width: 190px;
+        }
+        to{
+            width: 120px;
+        }
+    }
+}
+@mixin hoverprixanimation {
+    position:relative;
+    left: 0px;
+    animation-name: prixanimation;
+    animation-duration: 1000ms;
+    @keyframes prixanimation {
+        from{
+            position: relative;
+            left: 70px;
+        }
+        to{
+            position: relative;
+            left: 0px;
+        }
+    }
+}
+@mixin animationyes {
+    animation-name:coco;
+    animation-duration:1000ms;
+    @keyframes coco {
+        from{
+            transform:rotate(-360deg);
+        }
+        to{
+            transform:rotate(360deg);
+        }
+    }
+}
+@mixin nothovercontenu {
+    width: 190px;
+    animation-name: retourcontenu;
+    animation-duration: 1000ms;
+    @keyframes retourcontenu {
+        from{
+            width: 120px;
+        }
+        to{
+            width: 190px;
+        }
+    }
+}
+@mixin nothoverprixanimation {
+    position:relative;
+    left: 70px;
+    animation-name: retourprixanimation;
+    animation-duration: 1000ms;
+    @keyframes retourprixanimation {
+        from{
+            position: relative;
+            left: 0px;
+        }
+        to{
+            position: relative;
+            left: 70px;
+        }
+    }
+}
+@mixin loadingspinner {
+    animation-name:spinner;
+    animation-duration:1000ms;
+    animation-iteration-count:3;
+    @keyframes spinner {
+        0%{
+            font-size:200px;
+            transform:rotate(360deg);
+        }
+        100%{
+            font-size:200px;
+            transform:rotate(-360deg);
+        }
+    }
+}
+@mixin fondblanc {
+    animation-name:fond;
+    animation-duration:3000ms;
+    transform:scale(1);
+    @keyframes fond {
+        0%{
+            transform:scale(0);
+        }
+        99%{
+            transform:scale(0);
+        }
+        100%{
+            transform:scale(1);
+        }
+    }
+}

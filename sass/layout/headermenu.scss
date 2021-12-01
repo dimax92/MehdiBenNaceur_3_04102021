@@ -1,0 +1,13 @@
+.headermenu{
+    display:flex;
+    justify-content: center;
+    &__lien{
+        &__fleche{
+            font-size:20px;
+            margin-right: 50px;
+        }
+        &__image{
+            height: 25px;
+        }
+    }
+}

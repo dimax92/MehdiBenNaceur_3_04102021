@@ -1,0 +1,14 @@
+@media (min-width:400px){
+    .mainmenu{
+        &__presentation{
+            &__choix{
+                flex-direction:row;
+                flex-wrap:wrap;
+                justify-content:center;
+                &__choix1{
+                    margin:10px 10px;
+                }
+            }
+        }
+    }
+}

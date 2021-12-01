@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 * {
   font-family: "Roboto", sans-serif;
@@ -41,11 +41,11 @@ a {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  animation-name: headers;
+  animation-name: fond;
   animation-duration: 3000ms;
   transform: scale(1);
 }
-@keyframes headers {
+@keyframes fond {
   0% {
     transform: scale(0);
   }
@@ -64,14 +64,26 @@ a {
   height: 25px;
 }
 
+.headermenu {
+  display: flex;
+  justify-content: center;
+}
+.headermenu__lien__fleche {
+  font-size: 20px;
+  margin-right: 50px;
+}
+.headermenu__lien__image {
+  height: 25px;
+}
+
 .main {
   display: flex;
   flex-direction: column;
-  animation-name: mains;
+  animation-name: fond;
   animation-duration: 3000ms;
   transform: scale(1);
 }
-@keyframes mains {
+@keyframes fond {
   0% {
     transform: scale(0);
   }
@@ -336,104 +348,6 @@ a {
   }
 }
 
-.footer {
-  display: flex;
-  background: #2d2d2d;
-  flex-direction: column;
-  justify-content: center;
-  padding: 30px 0px 30px 0px;
-  animation-name: footers;
-  animation-duration: 3000ms;
-  transform: scale(1);
-}
-@keyframes footers {
-  0% {
-    transform: scale(0);
-  }
-  99% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-.footer__divlogo {
-  margin: 0px 0px 20px 30px;
-}
-.footer__divlogo__logo {
-  height: 20px;
-}
-.footer__logocontenu {
-  display: flex;
-  align-items: center;
-  margin-left: 30px;
-}
-.footer__logocontenu__logo1 {
-  font-size: 20px;
-  height: 20px;
-  color: white;
-  width: 25px;
-}
-.footer__logocontenu__contenu1 {
-  font-size: 20px;
-  height: 20px;
-  color: white;
-  margin: 5px;
-}
-.footer__contenu {
-  font-size: 20px;
-  margin-left: 30px;
-  color: white;
-  margin: 5px 5px 5px 30px;
-}
-.footer__lien {
-  width: fit-content;
-}
-.footer__lien__contenu {
-  font-size: 20px;
-  margin-left: 30px;
-  color: white;
-  margin: 5px 5px 5px 30px;
-}
-
-@media (min-width: 400px) {
-  .loadingspinner {
-    left: 40%;
-  }
-
-  .main__divfonctionnement {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .main__menus__menus1 {
-    flex-direction: row;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-* {
-  font-family: "Roboto", sans-serif;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-.headermenu {
-  display: flex;
-  justify-content: center;
-}
-.headermenu__lien__fleche {
-  font-size: 20px;
-  margin-right: 50px;
-}
-.headermenu__lien__image {
-  height: 25px;
-}
-
 .mainmenu {
   display: flex;
   justify-content: center;
@@ -685,6 +599,66 @@ a {
   box-shadow: 0px 0px 9px black;
 }
 
+.footer {
+  display: flex;
+  background: #2d2d2d;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 0px 30px 0px;
+  animation-name: fond;
+  animation-duration: 3000ms;
+  transform: scale(1);
+}
+@keyframes fond {
+  0% {
+    transform: scale(0);
+  }
+  99% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.footer__divlogo {
+  margin: 0px 0px 20px 30px;
+}
+.footer__divlogo__logo {
+  height: 20px;
+}
+.footer__logocontenu {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+.footer__logocontenu__logo1 {
+  font-size: 20px;
+  height: 20px;
+  color: white;
+  width: 25px;
+}
+.footer__logocontenu__contenu1 {
+  font-size: 20px;
+  height: 20px;
+  color: white;
+  margin: 5px;
+}
+.footer__contenu {
+  font-size: 20px;
+  margin-left: 30px;
+  color: white;
+  margin: 5px 5px 5px 30px;
+}
+.footer__lien {
+  width: fit-content;
+}
+.footer__lien__contenu {
+  font-size: 20px;
+  margin-left: 30px;
+  color: white;
+  margin: 5px 5px 5px 30px;
+}
+
 .footermenu {
   display: flex;
   background: #2d2d2d;
@@ -731,16 +705,6 @@ a {
   margin: 5px 5px 5px 30px;
 }
 
-@media (min-width: 400px) {
-  .mainmenu__presentation__choix {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .mainmenu__presentation__choix__choix1 {
-    margin: 10px 10px;
-  }
-}
 /*.palettegout {
     background: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
     background-size: 100%;
@@ -775,6 +739,34 @@ a {
 .delicesens {
   background: url(/P3_bennaceur_mehdi/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
   background-size: 100%;
+}
+
+@media (min-width: 400px) {
+  .loadingspinner {
+    left: 40%;
+  }
+
+  .main__divfonctionnement {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main__menus__menus1 {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (min-width: 400px) {
+  .mainmenu__presentation__choix {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .mainmenu__presentation__choix__choix1 {
+    margin: 10px 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
