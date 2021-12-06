@@ -5,61 +5,61 @@
     &__cadresup{
         display: flex;
         justify-content: center;
-        &__cadre{
-            display:grid;
-            grid-template-rows: 15% 85%;
-            height: 300px;
-            margin-top: 20px;
-            width: 100%;
-            &__cadre1{
-                background: linear-gradient(to top, #d5d5d5, #d5d5d5 90%, #a7a7a7 100%);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                &__map{
-                    font-size:20px;
-                    height: 18px;
-                    margin-right: 20px;
-                }
-                &__paris{
-                    font-size:18px;
-                    font-weight: bold;
-                }
-            }
-            &__cadre2{
-                background: #e6e5e5;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding:20px;
-                justify-content:space-around;
-                &__reservez{
-                    font-size: 20px;
-                    font-weight: bold;
-                    text-align: center;
-                    margin:0px;
-                }
-                &__decouvrez{
-                    font-size:16px;
-                    text-align: center;
-                    margin:0px;
-                }
-                &__explorer{
-                    height: 50px;
-                    font-size: 16px;
-                    width: 200px;
-                    border-radius: 30px;
-                    border: none;
-                    background: linear-gradient(173deg, #FF79DA, #FF79DA 10%, #9356DC 100%);
-                    color: white;
-                    box-shadow: 0px 0px 9px #00000069;
-                }
-                &__explorer:hover{
-                    opacity:0.9;
-                    box-shadow: 0px 0px 9px black;
-                }
-            }
-        }
+    }
+    &__cadre{
+        display:grid;
+        grid-template-rows: 15% 85%;
+        height: 300px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    &__cadre1{
+        background: linear-gradient(to top, #d5d5d5, #d5d5d5 90%, #a7a7a7 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__map{
+        font-size:20px;
+        height: 18px;
+        margin-right: 20px;
+    }
+    &__paris{
+        font-size:18px;
+        font-weight: bold;
+    }
+    &__cadre2{
+        background: #e6e5e5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:20px;
+        justify-content:space-around;
+    }
+    &__reservez{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin:0px;
+    }
+    &__decouvrez{
+        font-size:16px;
+        text-align: center;
+        margin:0px;
+    }
+    &__explorer{
+        height: 50px;
+        font-size: 16px;
+        width: 200px;
+        border-radius: 30px;
+        border: none;
+        background: linear-gradient(173deg, #FF79DA, #FF79DA 10%, #9356DC 100%);
+        color: white;
+        box-shadow: 0px 0px 9px #00000069;
+    }
+    &__explorer:hover{
+        opacity:0.9;
+        box-shadow: 0px 0px 9px black;
     }
     &__fonctionnement{
         font-size:20px;
@@ -70,81 +70,81 @@
         display:flex;
         flex-direction: column;
         align-items: center;
-        &__divsuperieur{
-            display:flex;
-            align-items: center;
-            &__divnumero{
-                display: flex;
-                height: 30px;
-                width: 30px;
-                align-items: center;
-                justify-content: center;
-                background: #9356DC;
-                border-radius: 100px;
-                position: relative;
-                left: 8%;
-                &__numero{
-                    font-size: 20px;
-                    margin: 0px;
-                    color: white;
-                }
-            }
-            &__divfonctionnement_div{
-                display:flex;
-                align-items: center;
-                background: #f7f7f7;
-                margin: 10px;
-                padding: 10px 20px;
-                justify-content: space-evenly;
-                border-radius: 15px;
-                width: 210px;
-                box-shadow: 0px 5px 13px 0px #0000003d;
-                &__mobile{
-                    font-size: 16px;
-                    height:16px;
-                    width:16px;
-                    color: grey;
-                }
-                &__choisissez{
-                    font-size:14px;
-                    margin:10px;
-                    font-weight:bold;
-                }
-                &__divmenu{
-                    display:flex;
-                    width:16px;
-                    &__ellipse{
-                        font-size:16px;
-                        height:16px;
-                        color: grey;
-                    }
-                    &__bars{
-                        font-size:16px;
-                        height:16px;
-                        color: grey;
-                    }
-                }
-                &__composez{
-                    font-size:14px;
-                    margin:10px;
-                    font-weight:bold;
-                }
-                &__magasin{
-                    font-size:16px;
-                    height:16px;
-                    width:16px;
-                    color: grey;
-                }
-                &__degustez{
-                    font-size:14px;
-                    margin:10px;
-                    font-weight:bold;
-                }
-            }
-            &__divfonctionnement_div:hover {
-                background: #f3e5f5;
-            }
-        }
+    }
+    &__divsuperieur{
+        display:flex;
+        align-items: center;
+    }
+    &__divnumero{
+        display: flex;
+        height: 30px;
+        width: 30px;
+        align-items: center;
+        justify-content: center;
+        background: #9356DC;
+        border-radius: 100px;
+        position: relative;
+        left: 8%;
+    }
+    &__numero{
+        font-size: 20px;
+        margin: 0px;
+        color: white;
+    }
+    &__divfonctionnement_div{
+        display:flex;
+        align-items: center;
+        background: #f7f7f7;
+        margin: 10px;
+        padding: 10px 20px;
+        justify-content: space-evenly;
+        border-radius: 15px;
+        width: 210px;
+        box-shadow: 0px 5px 13px 0px #0000003d;
+    }
+    &__mobile{
+        font-size: 16px;
+        height:16px;
+        width:16px;
+        color: grey;
+    }
+    &__choisissez{
+        font-size:14px;
+        margin:10px;
+        font-weight:bold;
+    }
+    &__divmenu{
+        display:flex;
+        width:16px;
+    }
+    &__ellipse{
+        font-size:16px;
+        height:16px;
+        color: grey;
+    }
+    &__bars{
+        font-size:16px;
+        height:16px;
+        color: grey;
+    }
+    &__composez{
+        font-size:14px;
+        margin:10px;
+        font-weight:bold;
+    }
+    &__magasin{
+        font-size:16px;
+        height:16px;
+        width:16px;
+        color: grey;
+    }
+    &__degustez{
+        font-size:14px;
+        margin:10px;
+        font-weight:bold;
+    }
+    &__divfonctionnement_div:hover {
+        background: #f3e5f5;
     }
     &__menus{
         background: #e6e5e5;
@@ -153,110 +153,97 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        &__restaurants{
-            font-size: 20px;
-            font-weight: bold;
-            width: 100%;
-        }
-        &__menus1{
-            &__liencarte {
-                margin: 20px;
-                border-radius: 20px;
-                &__plats{
-                    display:flex;
-                    flex-direction: column;
-                    align-items: center;
-                    background: white;
-                    width: 280px;
-                    border-radius: 20px;
-                    &__imageplats{
-                        height: 180px;
-                        width: 280px;
-                        object-fit: cover;
-                        border-radius: 20px 20px 0px 0px;
-                        background-size: 100%;
-                        &__nouveau {
-                            text-align: center;
-                            background: #99E2D0;
-                            color: green;
-                            width: 70px;
-                            padding: 6px;
-                            border-radius: 3px;
-                            font-weight: bold;
-                            margin: 20px 0px 0px 180px;
-                        }
-                    }
-                    &__presentation{
-                        display:flex;
-                        width: 300px;
-                        justify-content: space-between;
-                        &__presentation2{
-                            display:flex;
-                            flex-direction:column;
-                            margin: 20px 110px 20px 20px;
-                            &__nom{
-                                font-size:15px;
-                                margin: 2px 0px;
-                                font-weight:bold;
-                            }
-                            &__lieu{
-                                font-size:15px;
-                                margin: 2px 0px;
-                            }
-                        }
-                        &__animationcoeur{
-                            height:20px;
-                            width:20px;
-                            margin:20px 20px 0px 0px;
-                            &__animationcoeur1{
-                                display:none;
-                                height:20px;
-                                width:20px;
-                                &__cache{
-                                    height: 20px;
-                                    width: 20px;
-                                    background: white;
-                                    position: relative;
-                                    bottom: 20px;
-                                }
-                                &__coeur1 {
-                                    font-size: 20px;
-                                    height:20px;
-                                    background: linear-gradient(357deg, #FF79DA, #FF79DA 10%, #9356DC 100%);
-                                    -webkit-background-clip: text;
-                                    -webkit-text-fill-color: transparent;
-                                }
-                            }
-                            &__coeur{
-                                font-size:20px;
-                                height: 20px;
-                            }
-                            &:hover & {
-                                &__coeur{
-                                    display:none;
-                                }
-                                &__animationcoeur1{
-                                    display:initial;
-                                    &__cache{
-                                        animation-name:jack;
-                                        animation-duration:2000ms;
-                                        transform-origin:50% 0%;
-                                        transform:scale(1,0);
-                                        @keyframes jack {
-                                            from{
-                                                transform:scale(1,1);
-                                            }
-                                            to{
-                                                transform:scale(1,0);
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+    }
+    &__restaurants{
+        font-size: 20px;
+        font-weight: bold;
+        width: 100%;
+    }
+    &__liencarte {
+        margin: 20px;
+        border-radius: 20px;
+    }
+    &__plats{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        background: white;
+        width: 280px;
+        border-radius: 20px;
+    }
+    &__imageplats{
+        height: 180px;
+        width: 280px;
+        object-fit: cover;
+        border-radius: 20px 20px 0px 0px;
+        background-size: 100%;
+    }
+    &__nouveau {
+        text-align: center;
+        background: #99E2D0;
+        color: green;
+        width: 70px;
+        padding: 6px;
+        border-radius: 3px;
+        font-weight: bold;
+        margin: 20px 0px 0px 180px;
+    }
+    &__presentation{
+        display:flex;
+        width: 300px;
+        justify-content: space-between;
+    }
+    &__presentation2{
+        display:flex;
+        flex-direction:column;
+        margin: 20px 110px 20px 20px;
+    }
+    &__nom{
+        font-size:15px;
+        margin: 2px 0px;
+        font-weight:bold;
+    }
+    &__lieu{
+        font-size:15px;
+        margin: 2px 0px;
+    }
+    &__animationcoeur{
+        height:20px;
+        width:20px;
+        margin:20px 20px 0px 0px;
+    }
+    &__animationcoeur1{
+        display:none;
+        height:20px;
+        width:20px;
+    }
+    &__cache{
+        height: 20px;
+        width: 20px;
+        background: white;
+        position: relative;
+        bottom: 20px;
+    }
+    &__coeur1 {
+        font-size: 20px;
+        height:20px;
+        background: linear-gradient(357deg, #FF79DA, #FF79DA 10%, #9356DC 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &__coeur{
+        font-size:20px;
+        height: 20px;
+    }
+}
+.main__animationcoeur:hover {
+    .main__coeur{
+        display:none;
+    }
+    .main__animationcoeur1{
+        display:initial;
+    }
+    .main__cache{
+        @include animationcoeur;
     }
 }

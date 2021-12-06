@@ -99,29 +99,29 @@ a {
   display: flex;
   justify-content: center;
 }
-.main__cadresup__cadre {
+.main__cadre {
   display: grid;
   grid-template-rows: 15% 85%;
   height: 300px;
   margin-top: 20px;
   width: 100%;
 }
-.main__cadresup__cadre__cadre1 {
+.main__cadre1 {
   background: linear-gradient(to top, #d5d5d5, #d5d5d5 90%, #a7a7a7 100%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.main__cadresup__cadre__cadre1__map {
+.main__map {
   font-size: 20px;
   height: 18px;
   margin-right: 20px;
 }
-.main__cadresup__cadre__cadre1__paris {
+.main__paris {
   font-size: 18px;
   font-weight: bold;
 }
-.main__cadresup__cadre__cadre2 {
+.main__cadre2 {
   background: #e6e5e5;
   display: flex;
   flex-direction: column;
@@ -129,18 +129,18 @@ a {
   padding: 20px;
   justify-content: space-around;
 }
-.main__cadresup__cadre__cadre2__reservez {
+.main__reservez {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
   margin: 0px;
 }
-.main__cadresup__cadre__cadre2__decouvrez {
+.main__decouvrez {
   font-size: 16px;
   text-align: center;
   margin: 0px;
 }
-.main__cadresup__cadre__cadre2__explorer {
+.main__explorer {
   height: 50px;
   font-size: 16px;
   width: 200px;
@@ -150,7 +150,7 @@ a {
   color: white;
   box-shadow: 0px 0px 9px #00000069;
 }
-.main__cadresup__cadre__cadre2__explorer:hover {
+.main__explorer:hover {
   opacity: 0.9;
   box-shadow: 0px 0px 9px black;
 }
@@ -164,11 +164,11 @@ a {
   flex-direction: column;
   align-items: center;
 }
-.main__divfonctionnement__divsuperieur {
+.main__divsuperieur {
   display: flex;
   align-items: center;
 }
-.main__divfonctionnement__divsuperieur__divnumero {
+.main__divnumero {
   display: flex;
   height: 30px;
   width: 30px;
@@ -179,12 +179,12 @@ a {
   position: relative;
   left: 8%;
 }
-.main__divfonctionnement__divsuperieur__divnumero__numero {
+.main__numero {
   font-size: 20px;
   margin: 0px;
   color: white;
 }
-.main__divfonctionnement__divsuperieur__divfonctionnement_div {
+.main__divfonctionnement_div {
   display: flex;
   align-items: center;
   background: #f7f7f7;
@@ -195,48 +195,48 @@ a {
   width: 210px;
   box-shadow: 0px 5px 13px 0px #0000003d;
 }
-.main__divfonctionnement__divsuperieur__divfonctionnement_div__mobile {
+.main__mobile {
   font-size: 16px;
   height: 16px;
   width: 16px;
   color: grey;
 }
-.main__divfonctionnement__divsuperieur__divfonctionnement_div__choisissez {
+.main__choisissez {
   font-size: 14px;
   margin: 10px;
   font-weight: bold;
 }
-.main__divfonctionnement__divsuperieur__divfonctionnement_div__divmenu {
+.main__divmenu {
   display: flex;
   width: 16px;
 }
-.main__divfonctionnement__divsuperieur__divfonctionnement_div__divmenu__ellipse {
+.main__ellipse {
   font-size: 16px;
   height: 16px;
   color: grey;
 }
-.main__divfonctionnement__divsuperieur__divfonctionnement_div__divmenu__bars {
+.main__bars {
   font-size: 16px;
   height: 16px;
   color: grey;
 }
-.main__divfonctionnement__divsuperieur__divfonctionnement_div__composez {
+.main__composez {
   font-size: 14px;
   margin: 10px;
   font-weight: bold;
 }
-.main__divfonctionnement__divsuperieur__divfonctionnement_div__magasin {
+.main__magasin {
   font-size: 16px;
   height: 16px;
   width: 16px;
   color: grey;
 }
-.main__divfonctionnement__divsuperieur__divfonctionnement_div__degustez {
+.main__degustez {
   font-size: 14px;
   margin: 10px;
   font-weight: bold;
 }
-.main__divfonctionnement__divsuperieur__divfonctionnement_div:hover {
+.main__divfonctionnement_div:hover {
   background: #f3e5f5;
 }
 .main__menus {
@@ -247,16 +247,16 @@ a {
   flex-direction: column;
   align-items: center;
 }
-.main__menus__restaurants {
+.main__restaurants {
   font-size: 20px;
   font-weight: bold;
   width: 100%;
 }
-.main__menus__menus1__liencarte {
+.main__liencarte {
   margin: 20px;
   border-radius: 20px;
 }
-.main__menus__menus1__liencarte__plats {
+.main__plats {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -264,14 +264,14 @@ a {
   width: 280px;
   border-radius: 20px;
 }
-.main__menus__menus1__liencarte__plats__imageplats {
+.main__imageplats {
   height: 180px;
   width: 280px;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
   background-size: 100%;
 }
-.main__menus__menus1__liencarte__plats__imageplats__nouveau {
+.main__nouveau {
   text-align: center;
   background: #99E2D0;
   color: green;
@@ -281,66 +281,67 @@ a {
   font-weight: bold;
   margin: 20px 0px 0px 180px;
 }
-.main__menus__menus1__liencarte__plats__presentation {
+.main__presentation {
   display: flex;
   width: 300px;
   justify-content: space-between;
 }
-.main__menus__menus1__liencarte__plats__presentation__presentation2 {
+.main__presentation2 {
   display: flex;
   flex-direction: column;
   margin: 20px 110px 20px 20px;
 }
-.main__menus__menus1__liencarte__plats__presentation__presentation2__nom {
+.main__nom {
   font-size: 15px;
   margin: 2px 0px;
   font-weight: bold;
 }
-.main__menus__menus1__liencarte__plats__presentation__presentation2__lieu {
+.main__lieu {
   font-size: 15px;
   margin: 2px 0px;
 }
-.main__menus__menus1__liencarte__plats__presentation__animationcoeur {
+.main__animationcoeur {
   height: 20px;
   width: 20px;
   margin: 20px 20px 0px 0px;
 }
-.main__menus__menus1__liencarte__plats__presentation__animationcoeur__animationcoeur1 {
+.main__animationcoeur1 {
   display: none;
   height: 20px;
   width: 20px;
 }
-.main__menus__menus1__liencarte__plats__presentation__animationcoeur__animationcoeur1__cache {
+.main__cache {
   height: 20px;
   width: 20px;
   background: white;
   position: relative;
   bottom: 20px;
 }
-.main__menus__menus1__liencarte__plats__presentation__animationcoeur__animationcoeur1__coeur1 {
+.main__coeur1 {
   font-size: 20px;
   height: 20px;
   background: linear-gradient(357deg, #FF79DA, #FF79DA 10%, #9356DC 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.main__menus__menus1__liencarte__plats__presentation__animationcoeur__coeur {
+.main__coeur {
   font-size: 20px;
   height: 20px;
 }
-.main__menus__menus1__liencarte__plats__presentation__animationcoeur:hover .main__menus__menus1__liencarte__plats__presentation__animationcoeur__coeur {
+
+.main__animationcoeur:hover .main__coeur {
   display: none;
 }
-.main__menus__menus1__liencarte__plats__presentation__animationcoeur:hover .main__menus__menus1__liencarte__plats__presentation__animationcoeur__animationcoeur1 {
+.main__animationcoeur:hover .main__animationcoeur1 {
   display: initial;
 }
-.main__menus__menus1__liencarte__plats__presentation__animationcoeur:hover .main__menus__menus1__liencarte__plats__presentation__animationcoeur__animationcoeur1__cache {
-  animation-name: jack;
+.main__animationcoeur:hover .main__cache {
+  animation-name: coeur;
   animation-duration: 2000ms;
   transform-origin: 50% 0%;
   transform: scale(1, 0);
 }
-@keyframes jack {
+@keyframes coeur {
   from {
     transform: scale(1, 1);
   }
@@ -680,42 +681,42 @@ a {
   margin: 5px 5px 5px 30px;
 }
 
+.palettegout {
+  background: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: 100%;
+}
+
+.noteenchantee {
+  background: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-size: 100%;
+}
+
+.lafrancaise {
+  background: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-size: 100%;
+}
+
+.delicesens {
+  background: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-size: 100%;
+}
+
 /*.palettegout {
-    background: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background: url(/P3_bennaceur_mehdi/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
     background-size: 100%;
 }
 .noteenchantee {
-    background: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+    background: url(/P3_bennaceur_mehdi/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
     background-size: 100%;
 }
 .lafrancaise {
-    background: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    background: url(/P3_bennaceur_mehdi/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
     background-size: 100%;
 }
 .delicesens {
-    background: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+    background: url(/P3_bennaceur_mehdi/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
     background-size: 100%;
 }*/
-.palettegout {
-  background: url(/P3_bennaceur_mehdi/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-  background-size: 100%;
-}
-
-.noteenchantee {
-  background: url(/P3_bennaceur_mehdi/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-  background-size: 100%;
-}
-
-.lafrancaise {
-  background: url(/P3_bennaceur_mehdi/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-  background-size: 100%;
-}
-
-.delicesens {
-  background: url(/P3_bennaceur_mehdi/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-  background-size: 100%;
-}
-
 @media (min-width: 400px) {
   .loadingspinner {
     left: 40%;
@@ -726,7 +727,7 @@ a {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .main__menus__menus1 {
+  .main__menus1 {
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
