@@ -1,12 +1,14 @@
 .headermenu{
     display:flex;
-    justify-content: center;
-    margin-top: 10px;
+    justify-content: space-between;
+    margin-top: 21px;
+    max-width: 376px;
     &__fleche{
         font-size:20px;
-        margin-right: 50px;
+        margin-left: 22px;
     }
     &__image{
         height: 25px;
+        margin-right: 30%;
     }
 }

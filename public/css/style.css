@@ -11,6 +11,24 @@ a {
   width: fit-content;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+}
+
 .loadingspinner {
   color: #9356DC;
   text-align: center;
@@ -41,6 +59,7 @@ a {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
   animation-name: fond;
   animation-duration: 3000ms;
   transform: scale(1);
@@ -66,15 +85,17 @@ a {
 
 .headermenu {
   display: flex;
-  justify-content: center;
-  margin-top: 10px;
+  justify-content: space-between;
+  margin-top: 21px;
+  max-width: 376px;
 }
 .headermenu__fleche {
   font-size: 20px;
-  margin-right: 50px;
+  margin-left: 22px;
 }
 .headermenu__image {
   height: 25px;
+  margin-right: 30%;
 }
 
 .main {
@@ -101,13 +122,13 @@ a {
 }
 .main__cadre {
   display: grid;
-  grid-template-rows: 15% 85%;
-  height: 300px;
-  margin-top: 20px;
+  grid-template-rows: 15.5% 84.5%;
+  height: 338px;
+  margin-top: 14px;
   width: 100%;
 }
 .main__cadre1 {
-  background: linear-gradient(to top, #d5d5d5, #d5d5d5 90%, #a7a7a7 100%);
+  background: linear-gradient(to top, #eaeaea, #eaeaea 90%, #d5d5d5 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,27 +139,29 @@ a {
   margin-right: 20px;
 }
 .main__paris {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
 }
 .main__cadre2 {
-  background: #e6e5e5;
+  background: #f6f6f6;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  justify-content: space-around;
+  padding: 43px 20px 57px 20px;
+  justify-content: space-between;
 }
 .main__reservez {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   text-align: center;
   margin: 0px;
 }
 .main__decouvrez {
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
   margin: 0px;
+  position: relative;
+  bottom: 10px;
 }
 .main__explorer {
   height: 50px;
@@ -151,59 +174,65 @@ a {
   box-shadow: 0px 0px 9px #00000069;
 }
 .main__explorer:hover {
-  opacity: 0.9;
+  opacity: 0.6;
   box-shadow: 0px 0px 9px black;
 }
 .main__fonctionnement {
   font-size: 20px;
   font-weight: bold;
-  margin-left: 20px;
+  margin: 54px 0px 0px 20px;
 }
 .main__divfonctionnement {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 24px 0px 0px 0px;
 }
 .main__divsuperieur {
   display: flex;
   align-items: center;
+  width: 100%;
+  max-width: 376px;
+  justify-content: center;
+  justify-content: flex-end;
 }
 .main__divnumero {
   display: flex;
-  height: 30px;
-  width: 30px;
+  height: 26px;
+  width: 26px;
   align-items: center;
   justify-content: center;
   background: #9356DC;
   border-radius: 100px;
   position: relative;
-  left: 8%;
+  right: 11%;
 }
 .main__numero {
-  font-size: 20px;
+  font-size: 13px;
   margin: 0px;
   color: white;
 }
 .main__divfonctionnement_div {
+  height: 54px;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   background: #f7f7f7;
-  margin: 10px;
+  margin: 10px 19px 10px 0px;
   padding: 10px 20px;
-  justify-content: space-evenly;
   border-radius: 15px;
-  width: 210px;
+  width: 76%;
   box-shadow: 0px 5px 13px 0px #0000003d;
 }
 .main__mobile {
-  font-size: 16px;
+  font-size: 21px;
   height: 16px;
   width: 16px;
   color: grey;
 }
 .main__choisissez {
   font-size: 14px;
-  margin: 10px;
+  margin: 0px 0px 0px 28px;
   font-weight: bold;
 }
 .main__divmenu {
@@ -222,7 +251,7 @@ a {
 }
 .main__composez {
   font-size: 14px;
-  margin: 10px;
+  margin: 0px 0px 0px 28px;
   font-weight: bold;
 }
 .main__magasin {
@@ -233,16 +262,18 @@ a {
 }
 .main__degustez {
   font-size: 14px;
-  margin: 10px;
+  margin: 0px 0px 0px 28px;
   font-weight: bold;
 }
 .main__divfonctionnement_div:hover {
   background: #f3e5f5;
 }
+.main__divfonctionnement_div:hover .iconFonctionnement {
+  color: #9356DC;
+}
 .main__menus {
-  background: #e6e5e5;
-  margin-top: 40px;
-  padding: 20px;
+  background: #f6f6f6;
+  margin-top: 59px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -250,23 +281,37 @@ a {
 .main__restaurants {
   font-size: 20px;
   font-weight: bold;
-  width: 100%;
+  width: 88%;
+  margin: 59px 0px 0px 0px;
+}
+.main__menus1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 89%;
+  margin-bottom: 43px;
 }
 .main__liencarte {
-  margin: 20px;
+  margin: 10px 20px;
   border-radius: 20px;
+  width: 100%;
+  max-width: 335px;
 }
 .main__plats {
   display: flex;
   flex-direction: column;
   align-items: center;
   background: white;
-  width: 280px;
+  width: 100%;
+  height: 252px;
   border-radius: 20px;
 }
 .main__imageplats {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
   height: 180px;
-  width: 280px;
+  width: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
   background-size: 100%;
@@ -279,17 +324,17 @@ a {
   padding: 6px;
   border-radius: 3px;
   font-weight: bold;
-  margin: 20px 0px 0px 180px;
+  margin: 14px;
 }
 .main__presentation {
   display: flex;
-  width: 300px;
+  width: 100%;
   justify-content: space-between;
 }
 .main__presentation2 {
   display: flex;
   flex-direction: column;
-  margin: 20px 110px 20px 20px;
+  margin: 20px 0px 20px 14px;
 }
 .main__nom {
   font-size: 15px;
@@ -325,8 +370,8 @@ a {
   -webkit-text-fill-color: transparent;
 }
 .main__coeur {
-  font-size: 20px;
-  height: 20px;
+  font-size: 23px;
+  height: 23px;
 }
 
 .main__animationcoeur:hover .main__coeur {
@@ -354,17 +399,16 @@ a {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 20px 0px 0px 0px;
+  margin: 11px 0px 0px 0px;
 }
 .mainmenu__image {
-  height: 200px;
+  height: 253px;
   object-fit: cover;
 }
 .mainmenu__presentation {
-  background: #e3e3e3;
+  background: #f6f6f6;
   border-radius: 40px 40px 0px 0px;
   margin-top: -40px;
-  padding: 20px;
 }
 .mainmenu__titre {
   display: flex;
@@ -372,27 +416,30 @@ a {
   justify-content: space-between;
 }
 .mainmenu__francaise {
-  font-size: 20px;
+  font-size: 27px;
   font-family: "Shrikhand", cursive;
+  margin: 36px 0px 0px 20px;
 }
 .mainmenu__coeur {
-  font-size: 20px;
-  height: 20px;
+  font-size: 24px;
+  height: 24px;
+  margin: 38px 38px 0px 0px;
 }
 .mainmenu__type {
-  font-size: 15px;
-  margin: 2px 0px;
+  font-size: 19px;
+  margin: 37px 0px 2px 20px;
 }
 .mainmenu__hr {
   width: 30px;
   border: solid #99E2D0 2px;
-  margin: 0px;
+  margin: 0px 0px 0px 20px;
 }
 .mainmenu__choix {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30px 0px;
+  margin: 13px 0px 30px 0px;
+  width: 100%;
 }
 .mainmenu .n1 {
   animation-delay: 100ms;
@@ -446,38 +493,40 @@ a {
   }
 }
 .mainmenu__choix1 {
-  max-height: 55px;
   display: flex;
   background: white;
-  margin: 10px 0px;
+  margin: 7px 0px;
   border-radius: 15px;
   box-shadow: 0px 0px 10px #00000033;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   overflow: hidden;
-  width: 244px;
+  width: 93%;
+  max-width: 350px;
+  height: 69px;
 }
 .mainmenu__contenu {
   display: flex;
   flex-direction: column;
-  margin: 10px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 190px;
+  width: 93%;
   transition: 1000ms;
+  height: 64%;
+  justify-content: space-between;
 }
 .mainmenu__nom {
-  font-size: 13px;
-  margin: 2px;
+  font-size: 16px;
+  margin: 0px 0px 0px 10px;
   font-weight: bold;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .mainmenu__ingredients {
-  font-size: 11px;
-  margin: 2px;
+  font-size: 14px;
+  margin: 0px 0px 0px 10px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -487,6 +536,7 @@ a {
   align-items: flex-end;
   flex-direction: row;
   overflow: hidden;
+  height: 100%;
   margin-left: -70px;
   position: relative;
   left: 70px;
@@ -494,35 +544,34 @@ a {
   transition: 1000ms;
 }
 .mainmenu__prix {
-  font-size: 10px;
-  margin: 10px;
+  font-size: 15px;
+  margin: 0px 25px 15px 0px;
   font-weight: bold;
-  width: 16px;
 }
 .mainmenu__animation {
-  height: 55px;
-  width: 70px;
+  height: 100%;
+  width: 60px;
   display: flex;
   overflow: hidden;
   align-items: center;
   background: #99E2D0;
+  justify-content: center;
 }
 .mainmenu__yes {
   font-size: 20px;
   color: white;
   overflow: hidden;
-  margin-left: 25px;
   transition: 1000ms;
 }
 .mainmenu__divcommander {
   display: flex;
   justify-content: center;
-  margin: 50px 0px 90px 0px;
+  margin: 45px 0px 84px 0px;
 }
 .mainmenu__commander {
   height: 50px;
   font-size: 17px;
-  width: 220px;
+  width: 186px;
   border-radius: 30px;
   border: none;
   background: linear-gradient(173deg, #FF79DA, #FF79DA 10%, #9356DC 100%);
@@ -530,21 +579,21 @@ a {
   box-shadow: 0px 0px 9px #00000069;
 }
 .mainmenu__commander:hover {
-  opacity: 0.9;
+  opacity: 0.6;
   box-shadow: 0px 0px 9px black;
 }
 
 .mainmenu__choix1:hover .mainmenu__contenu {
-  width: 120px;
+  width: 66%;
   animation-name: titi;
   animation-duration: 1000ms;
 }
 @keyframes titi {
   from {
-    width: 190px;
+    width: 93%;
   }
   to {
-    width: 120px;
+    width: 66%;
   }
 }
 .mainmenu__choix1:hover .mainmenu__prixanimation {
@@ -636,42 +685,42 @@ a {
   margin: 5px 5px 5px 30px;
 }
 
+.palettegout {
+  background: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: 100%;
+}
+
+.noteenchantee {
+  background: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-size: 100%;
+}
+
+.lafrancaise {
+  background: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-size: 100%;
+}
+
+.delicesens {
+  background: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-size: 100%;
+}
+
 /*.palettegout {
-    background: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background: url(/P3_bennaceur_mehdi/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
     background-size: 100%;
 }
 .noteenchantee {
-    background: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+    background: url(/P3_bennaceur_mehdi/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
     background-size: 100%;
 }
 .lafrancaise {
-    background: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    background: url(/P3_bennaceur_mehdi/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
     background-size: 100%;
 }
 .delicesens {
-    background: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+    background: url(/P3_bennaceur_mehdi/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
     background-size: 100%;
 }*/
-.palettegout {
-  background: url(/P3_bennaceur_mehdi/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-  background-size: 100%;
-}
-
-.noteenchantee {
-  background: url(/P3_bennaceur_mehdi/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-  background-size: 100%;
-}
-
-.lafrancaise {
-  background: url(/P3_bennaceur_mehdi/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-  background-size: 100%;
-}
-
-.delicesens {
-  background: url(/P3_bennaceur_mehdi/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-  background-size: 100%;
-}
-
 @media (min-width: 400px) {
   .loadingspinner {
     left: 40%;
@@ -679,12 +728,6 @@ a {
 
   .main__divfonctionnement {
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .main__menus1 {
-    flex-direction: row;
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }

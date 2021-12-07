@@ -15,15 +15,15 @@
     }
 }
 @mixin hovercontenu {
-    width: 120px;
+    width: 66%;
     animation-name: titi;
     animation-duration: 1000ms;
     @keyframes titi {
         from{
-            width: 190px;
+            width: 93%;
         }
         to{
-            width: 120px;
+            width: 66%;
         }
     }
 }
