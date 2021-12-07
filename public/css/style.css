@@ -685,42 +685,42 @@ footer {
   margin: 5px 5px 5px 30px;
 }
 
-.palettegout {
-  background: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-  background-size: 100%;
-}
-
-.noteenchantee {
-  background: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-  background-size: 100%;
-}
-
-.lafrancaise {
-  background: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-  background-size: 100%;
-}
-
-.delicesens {
-  background: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-  background-size: 100%;
-}
-
 /*.palettegout {
-    background: url(/P3_bennaceur_mehdi/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
     background-size: 100%;
 }
 .noteenchantee {
-    background: url(/P3_bennaceur_mehdi/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+    background: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
     background-size: 100%;
 }
 .lafrancaise {
-    background: url(/P3_bennaceur_mehdi/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    background: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
     background-size: 100%;
 }
 .delicesens {
-    background: url(/P3_bennaceur_mehdi/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+    background: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
     background-size: 100%;
 }*/
+.palettegout {
+  background: url(/P3_bennaceur_mehdi/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: 100%;
+}
+
+.noteenchantee {
+  background: url(/P3_bennaceur_mehdi/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-size: 100%;
+}
+
+.lafrancaise {
+  background: url(/P3_bennaceur_mehdi/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-size: 100%;
+}
+
+.delicesens {
+  background: url(/P3_bennaceur_mehdi/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-size: 100%;
+}
+
 @media (min-width: 400px) {
   .loadingspinner {
     left: 40%;
@@ -730,6 +730,11 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+@media (max-width: 700px) {
+  .main__liencarte {
+    margin: 10px 0px;
   }
 }
 @media (min-width: 400px) {
