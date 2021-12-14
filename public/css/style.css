@@ -59,7 +59,7 @@ footer {
   color: #9356DC;
   text-align: center;
   font-size: 0px;
-  margin-top: 50%;
+  margin-top: 200px;
   background: transparent;
   animation-name: spinner;
   animation-duration: 1000ms;
@@ -67,12 +67,10 @@ footer {
 }
 @keyframes spinner {
   0% {
-    margin-top: 50%;
     font-size: 200px;
     transform: rotate(360deg);
   }
   100% {
-    margin-top: 50%;
     font-size: 200px;
     transform: rotate(-360deg);
   }
@@ -473,6 +471,23 @@ footer {
 }
 .mainmenu .n3 {
   animation-delay: 300ms;
+  opacity: 1;
+  transform: translate(0px, 0px);
+  animation-name: toto;
+  animation-duration: 1000ms;
+}
+@keyframes toto {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+.mainmenu .n4 {
+  animation-delay: 400ms;
   opacity: 1;
   transform: translate(0px, 0px);
   animation-name: toto;

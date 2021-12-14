@@ -55,6 +55,10 @@
         animation-delay:300ms;
         @include affichagechoix;
     }
+    .n4{
+        animation-delay:400ms;
+        @include affichagechoix;
+    }
     &__choix1{
         display:flex;
         background: white;

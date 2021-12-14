@@ -61,12 +61,10 @@
     animation-iteration-count:3;
     @keyframes spinner {
         0%{
-            margin-top: 50%;
             font-size:200px;
             transform:rotate(360deg);
         }
         100%{
-            margin-top: 50%;
             font-size:200px;
             transform:rotate(-360deg);
         }
