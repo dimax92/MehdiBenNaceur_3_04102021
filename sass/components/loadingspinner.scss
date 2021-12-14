@@ -1,10 +1,19 @@
+.divLoadingSpinner {
+    height:0%;
+    width:0%;
+    z-index: 5;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    background: white;
+    @include divLoadingSpinner;
+}
 .loadingspinner {
     color: #9356DC;
     text-align: center;
-    z-index: 2;
-    width: 100%;
     font-size: 0px;
-    margin-top: 0%;
-    background:transparent;
+    margin-top: 50%;
+    background: transparent;
     @include loadingspinner;
 }

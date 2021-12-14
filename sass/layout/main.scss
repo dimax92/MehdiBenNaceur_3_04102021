@@ -1,7 +1,6 @@
 .main{
     display:flex;
     flex-direction: column;
-    @include fondblanc;
     &__cadresup{
         display: flex;
         justify-content: center;
@@ -232,8 +231,8 @@
         margin: 2px 0px;
     }
     &__animationcoeur{
-        height:20px;
-        width:20px;
+        height: 23px;
+        width: 23px;
         margin:20px 20px 0px 0px;
     }
     &__animationcoeur1{
